@@ -138,7 +138,7 @@ const App = {
         padding: 2rem;
         position: relative;
       ">
-　　　<!-- 言語切り替えボタン -->
+        <!-- 言語切り替えボタン -->
         <div style="position: absolute; top: 1.5rem; right: 1.5rem;">
           <button onclick="app.toggleLangMenu()" id="langBtn" style="
             background: var(--card);
@@ -1590,12 +1590,16 @@ const App = {
     if (!this.userData.completedCategories.includes(categoryId)) {
       this.userData.completedCategories.push(categoryId);
 
-      // スナック獲得（ランダム1つ）
-      const snack = LevelSystem.getRandomSnack();
+      // スナック獲得（未所持を優先してランダムに1つ選ぶ）
+      // → 既所持スナックが選ばれてもポップアップは出るがコレクションが増えないバグを防ぐ
+      const ownedSnackEmojis = this.userData.snacks || [];
+      const unownedSnacks = LevelSystem.SNACKS.filter(s => !ownedSnackEmojis.includes(s.emoji));
+      const snackPool = unownedSnacks.length > 0 ? unownedSnacks : LevelSystem.SNACKS;
+      const snack = snackPool[Math.floor(Math.random() * snackPool.length)];
       this.currentSnack = snack;
 
-      // userData.snacks に追加（重複は除外）
-      if (!this.userData.snacks.includes(snack.emoji)) {
+      // userData.snacks に追加（未所持の場合のみ）
+      if (!ownedSnackEmojis.includes(snack.emoji)) {
         this.userData.snacks.push(snack.emoji);
       }
 
