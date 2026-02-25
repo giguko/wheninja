@@ -4,8 +4,8 @@
 const TEXTS = {
   welcome: {
     subText: {
-      ja: '日本の文化やマナーをシェアしてなかよくなろう！',
-      en: "Let's be friends by sharing Japanese culture and manners!"
+      ja: '日本の文化やマナーをシェアして\nなかよくなろう！',
+      en: "Let's be friends by sharing\nJapanese culture and manners!"
     }
   }
 };
@@ -28,7 +28,14 @@ const App = {
 
     // ユーザーデータ読み込み
     this.userData = Storage.load();
-    
+
+    // 3-1: フィードバック画面のネコ画像をプリロード（初回表示のラグを解消）
+    [
+      '/assets/images/cat-fuji-celebrate.png',
+      '/assets/images/cat-fuji-happy.png',
+      '/assets/images/cat-fuji-thinking.png'
+    ].forEach(src => { const img = new Image(); img.src = src; });
+
     // テーマ適用
     this.applyTheme(this.userData.settings.theme);
 
@@ -249,6 +256,7 @@ const App = {
           font-weight: 600;
           margin-bottom: 1.5rem;
           text-align: center;
+          white-space: pre-line;
           animation: fadeSlideUp 600ms ease-out 200ms both;
         ">${this.escapeHtml(subText)}</p>
 
@@ -641,7 +649,7 @@ const App = {
           color: #674e41;
           margin: 0 1.5rem;
           line-height: 1.5;
-          animation: fadeSlideUp 100ms ease-out 400ms both;
+          animation: fadeSlideUp 200ms ease-out both; /* 4-2: 遅延を削除して背景と同時に表示 */
           position: relative;
           z-index: 1;
         ">${message}</p>
@@ -659,13 +667,15 @@ const App = {
 
     document.body.appendChild(popup);
 
-    // アニメーション開始
+    // 4-1: ダブル rAF で初期 opacity:0 が確実に描画されてからトランジション開始
     requestAnimationFrame(() => {
-      popup.style.opacity = '1';
-      const card = document.getElementById('popupCard');
-      if (card) {
-        card.style.transform = 'translateY(0) scale(1)';
-      }
+      requestAnimationFrame(() => {
+        popup.style.opacity = '1';
+        const card = document.getElementById('popupCard');
+        if (card) {
+          card.style.transform = 'translateY(0) scale(1)';
+        }
+      });
     });
   },
 
@@ -732,7 +742,7 @@ const App = {
           color: #674e41;
           margin: 0;
           line-height: 1.6;
-          animation: fadeSlideUp 100ms ease-out 400ms both;
+          animation: fadeSlideUp 200ms ease-out both; /* 4-2: 遅延を削除して背景と同時に表示 */
           position: relative;
           z-index: 1;
         ">${this.escapeHtml(chatText)}</p>
@@ -752,13 +762,15 @@ const App = {
 
     document.body.appendChild(popup);
 
-    // アニメーション開始
+    // 4-1: ダブル rAF で初期 opacity:0 が確実に描画されてからトランジション開始
     requestAnimationFrame(() => {
-      popup.style.opacity = '1';
-      const card = document.getElementById('popupCard');
-      if (card) {
-        card.style.transform = 'translateY(0) scale(1)';
-      }
+      requestAnimationFrame(() => {
+        popup.style.opacity = '1';
+        const card = document.getElementById('popupCard');
+        if (card) {
+          card.style.transform = 'translateY(0) scale(1)';
+        }
+      });
     });
   },
 
@@ -910,31 +922,34 @@ const App = {
     if (!question) return '<div style="padding:2rem;text-align:center;">読み込み中...</div>';
     const lang = this.userData.settings.language;
 
-    // クイズ画像HTML（固定サイズ＋フェードイン）
+    // クイズ画像HTML
+    // 2-1: 背景枠（background/border/padding）を削除してシンプルに表示
+    // 2-2: 画像ロード中はシマープレースホルダーを表示→ロード完了後にスムーズ切り替え
     const imageHtml = question.imageUrl ? `
       <div style="
         width: 200px;
         height: 200px;
         margin: 0 auto 1.5rem;
-        background: var(--muted, #f0f0f0);
+        position: relative;
         border-radius: 0.75rem;
         overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
       ">
+        <!-- ロード中シマー（問題文と同時に表示、ロード完了で非表示） -->
+        <div class="img-shimmer"></div>
         <img
           src="${question.imageUrl}"
           alt="Quiz Image"
           style="
+            position: absolute;
+            inset: 0;
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
             border-radius: 0.75rem;
             opacity: 0;
             transition: opacity 250ms ease-in;
           "
-          onload="this.style.opacity='1'"
+          onload="this.style.opacity='1'; const s=this.previousElementSibling; if(s) s.style.opacity='0';"
         >
       </div>
     ` : '';
@@ -1120,22 +1135,27 @@ const App = {
         padding: 1.5rem 1.5rem;
       ">
         <!-- 猫の顔 + アイコン -->
+        <!-- 3-2: will-change: transform でポップアップ追加時の再描画を防ぐ -->
         <div style="
           position: relative;
           width: 120px;
           height: 120px;
           margin: 0 auto 1rem;
           animation: scaleIn 400ms ease-out;
+          will-change: transform;
         ">
-          <!-- 猫の顔 -->
-          <img 
-            src="${catImage}" 
+          <!-- 猫の顔 3-1: プリロード済み画像をフェードインで表示（テキストと同時） -->
+          <img
+            src="${catImage}"
             alt="Cat"
             style="
               width: 100%;
               height: 100%;
               object-fit: contain;
+              opacity: 0;
+              transition: opacity 250ms ease-in;
             "
+            onload="this.style.opacity='1'"
           >
           <!-- ◎◯✕ -->
           <div style="
@@ -2458,7 +2478,7 @@ const App = {
 
     // サブテキストを更新
     const subTextEl = document.getElementById('welcomeSubText');
-    if (subTextEl) subTextEl.textContent = TEXTS.welcome.subText[lang];
+    if (subTextEl) subTextEl.innerText = TEXTS.welcome.subText[lang];
 
     // チェックマークを更新
     const checkEn = document.getElementById('checkEn');
