@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="日本文化やマナー、日本特有の常識を理解・共有するクイズアプリ">
+    <meta name="theme-color" content="#4DC8C8">
+    
+    <!-- CSP設定 -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
+    
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/icon-512.png">
+    <link rel="apple-touch-icon" href="/assets/images/icon-512.png">
+    
+    <title>Wheninjapan - Culture Quiz</title>
+    
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <div id="app" class="app-container">
+            <!-- メインコンテンツ -->
+        <div id="mainContent">
+            <!-- ここに動的にコンテンツが挿入される -->
+        </div>
+    </div>
+
+    <!-- スクリプト -->
+    <script src="/scripts/storage.js"></script>
+    <script src="/scripts/quiz.js"></script>
+    <script src="/scripts/level.js"></script>
+    <script src="/scripts/app.js"></script>
+    
+    <!-- Service Worker登録 -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(reg => console.log('Service Worker registered'))
+                    .catch(err => console.log('Service Worker registration failed:', err));
+            });
+        }
+    </script>
+</body>
+</html>

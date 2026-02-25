@@ -1,0 +1,2698 @@
+{
+  "questions": [
+    {
+      "id": "transport_01",
+      "category": {
+        "ja": "交通・公共空間",
+        "en": "Transport & Public Spaces"
+      },
+      "difficulty": 1,
+      "imageUrl": null,
+      "question": {
+        "ja": "東京の満員電車に乗っている。横にいる友達と今日の予定について話したい。どうする?",
+        "en": "You're on a crowded Tokyo train and want to discuss today's plans with your friend next to you. What do you do?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "小さな声で話す",
+            "en": "Speak in a small voice"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "メッセージアプリで話す",
+            "en": "Talk via messaging app"
+          },
+          "type": "conditional"
+        },
+        {
+          "text": {
+            "ja": "大声で話す",
+            "en": "Talk loudly"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "電車内は静かにするのがみんなの心地よさにつながるよ！",
+          "en": "Quiet conversation helps everyone feel comfortable!"
+        },
+        "detail": {
+          "ja": "日本の電車内は図書館のような場所。小さな声で話すのがおすすめ。みんなが気持ちよく過ごせる空間を作ろう！",
+          "en": "Trains in Japan are like libraries. Speaking softly is recommended. Let's create a comfortable space for everyone!"
+        },
+        "comparison": {
+          "ja": "🇺🇸アメリカ: 電車で普通に会話OK 🇯🇵日本: 静かに過ごすのが思いやり",
+          "en": "🇺🇸USA: Normal conversation on trains OK 🇯🇵Japan: Being quiet is considerate"
+        }
+      }
+    },
+    {
+      "id": "transport_02",
+      "category": {
+        "ja": "交通・公共空間",
+        "en": "Transport & Public Spaces"
+      },
+      "difficulty": 1,
+      "imageUrl": "/assets/images/priority-mark.png",
+      "question": {
+        "ja": "電車の優先席に座っている。お年寄りが乗ってきた。どうする?",
+        "en": "You're sitting in a priority seat on the train. An elderly person boards. What do you do?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "すぐに席を譲る",
+            "en": "Offer your seat immediately"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "降りる駅が近いから座り続ける",
+            "en": "Stay seated as your stop is near"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "寝たふりをする",
+            "en": "Pretend to sleep"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "席を譲るとみんなが笑顔になるよ！",
+          "en": "Offering your seat makes everyone smile!"
+        },
+        "detail": {
+          "ja": "優先席は「誰かが必要な時のため」に空けておく日本流。譲ることで優しい気持ちが広がるよ。",
+          "en": "Priority seats are kept for \"when someone needs them\" - the Japanese way. Offering spreads kindness."
+        },
+        "comparison": {
+          "ja": "🇬🇧イギリス: 席を譲るのは良いマナー 🇯🇵日本: 優先席は積極的に譲るのが自然",
+          "en": "🇬🇧UK: Offering seats is good manners 🇯🇵Japan: Actively offering priority seats is natural"
+        }
+      }
+    },
+    {
+      "id": "transport_03",
+      "category": {
+        "ja": "交通・公共空間",
+        "en": "Transport & Public Spaces"
+      },
+      "difficulty": 2,
+      "imageUrl": null,
+      "question": {
+        "ja": "駅のホームで電車を待っている。他の人たちはどこに並んでいる?",
+        "en": "You're waiting for a train on the platform. Where are others lining up?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "停車位置のマーカーで2列で並ぶ",
+            "en": "Line up in two rows at marked positions"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "ドアの前に集まって早く乗れるようにする",
+            "en": "Gather in front of doors to board quickly"
+          },
+          "type": "conditional"
+        },
+        {
+          "text": {
+            "ja": "適当な場所にバラバラに立つ",
+            "en": "Stand randomly anywhere"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "日本では整列乗車が基本だよ！",
+          "en": "Orderly boarding is standard in Japan!"
+        },
+        "detail": {
+          "ja": "ホームドアや線路から離れた位置で、1列または2列で並んでね。整列乗車でスムーズ！",
+          "en": "Line up in 1-2 rows away from platform doors/tracks. Orderly boarding is smooth!"
+        },
+        "comparison": {
+          "ja": "🇫🇷フランス: 列に並ぶが混雑時は押し合いも 🇯🇵日本: 整然と左右に分かれる",
+          "en": "🇫🇷France: Queue but crowding when busy 🇯🇵Japan: Neatly split left and right"
+        }
+      }
+    },
+    {
+      "id": "transport_04",
+      "category": {
+        "ja": "交通・公共空間",
+        "en": "Transport & Public Spaces"
+      },
+      "difficulty": 2,
+      "imageUrl": null,
+      "question": {
+        "ja": "大きなスーツケースを持って混雑した電車に乗る。どうする?",
+        "en": "You're boarding a crowded train with a large suitcase. What do you do?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "足元に置いてできるだけスペースを取らないようにする",
+            "en": "Place at your feet taking minimal space"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "座席の横に置いて自分は立つ",
+            "en": "Place next to seat and stand"
+          },
+          "type": "conditional"
+        },
+        {
+          "text": {
+            "ja": "座席に置いて座れないようにする",
+            "en": "Place on seat preventing others sitting"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "スペースを譲るのがみんなの心地よさにつながるよ",
+          "en": "Sharing space helps everyone feel comfortable"
+        },
+        "detail": {
+          "ja": "混雑時は荷物を小さくまとめて足元に。みんなが通りやすいようにね。",
+          "en": "During rush hour keep luggage compact at your feet. Make it easy for everyone to pass."
+        },
+        "comparison": {
+          "ja": "🇩🇪ドイツ: 荷物は足元が基本 🇯🇵日本: さらにコンパクトにまとめるのが思いやり",
+          "en": "🇩🇪Germany: Luggage at feet is basic 🇯🇵Japan: Making it even more compact is considerate"
+        }
+      }
+    },
+    {
+      "id": "transport_05",
+      "category": {
+        "ja": "交通・公共空間",
+        "en": "Transport & Public Spaces"
+      },
+      "difficulty": 3,
+      "imageUrl": null,
+      "question": {
+        "ja": "朝8時の山手線に乗ろうとしている。何に気をつけるべき?",
+        "en": "You're about to board the Yamanote Line at 8am. What should you be aware of?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "超混雑するので可能なら避けるか端の車両を狙う",
+            "en": "Extremely crowded - avoid if possible or try end cars"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "普段と同じように乗ればOK",
+            "en": "Just board as usual"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "この時間は電車が運休している",
+            "en": "Trains don't run at this time"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "朝のラッシュは本当にすごいよ。無理せず待つのも賢い選択だね！",
+          "en": "Morning rush is intense. Waiting without forcing is a smart choice!"
+        },
+        "detail": {
+          "ja": "山手線は朝8時頃がピーク。端の車両は少し空いていることが多いよ。",
+          "en": "Yamanote Line peaks around 8am. End cars are often slightly less crowded."
+        },
+        "comparison": {
+          "ja": "🇬🇧ロンドン: 地下鉄ラッシュも混雑 🇯🇵日本: さらに静かに並ぶのが特徴",
+          "en": "🇬🇧London: Tube rush also crowded 🇯🇵Japan: Even quieter queuing is characteristic"
+        }
+      }
+    },
+    {
+      "id": "transport_06",
+      "category": {
+        "ja": "交通・公共空間",
+        "en": "Transport & Public Spaces"
+      },
+      "difficulty": 2,
+      "imageUrl": null,
+      "question": {
+        "ja": "公園でおにぎりを食べているとき頭上から大きな鳥が急降下してきた！どうする?",
+        "en": "A large bird dives from above while you're eating onigiri at a park! What do you do?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "食べ物を素早く隠すかガードする",
+            "en": "Quickly hide or guard your food"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "鳥に少し分けてあげる",
+            "en": "Share a little with the bird"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "スマホで動画を撮る",
+            "en": "Start recording video"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "トビが食べ物を狙うのは日本あるある！素早く守ろうね",
+          "en": "Kites targeting food is a Japan thing! Guard it quickly"
+        },
+        "detail": {
+          "ja": "公園や神社ではトビやカラスが急に降りてくることも。追いかけず食べ物を守るのが安全。",
+          "en": "At parks/shrines kites and crows may suddenly swoop. Don't chase - protect your food safely."
+        },
+        "comparison": {
+          "ja": "🇦🇺オーストラリア: カモメがビーチで食べ物を狙う 🇯🇵日本: トビが公園で同じように急襲",
+          "en": "🇦🇺Australia: Seagulls target beach food 🇯🇵Japan: Kites similarly raid at parks"
+        }
+      }
+    },
+    {
+      "id": "transport_07",
+      "category": {
+        "ja": "交通・公共空間",
+        "en": "Transport & Public Spaces"
+      },
+      "difficulty": 1,
+      "imageUrl": null,
+      "question": {
+        "ja": "移動中にドリンクのゴミが出た。どうする?",
+        "en": "You have trash from a drink while traveling. What do you do?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "公共のゴミ箱に捨てるか宿泊施設に持ち帰る",
+            "en": "Dispose in public bins or take back to your accommodation"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "ゴミ箱の場所を誰かに聞く",
+            "en": "Ask someone where trash bins are"
+          },
+          "type": "conditional"
+        },
+        {
+          "text": {
+            "ja": "その辺に置いていく",
+            "en": "Leave it somewhere"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "ゴミは持ち帰るのが基本だよ",
+          "en": "Taking trash with you is the basic rule"
+        },
+        "detail": {
+          "ja": "日本の街中には公共のゴミ箱が少ないよ。見つからない時は宿泊施設に持ち帰ろう。",
+          "en": "Public trash bins are rare in Japanese cities. If you can't find one take it back to your accommodation."
+        },
+        "comparison": {
+          "ja": "🇺🇸アメリカ: 街中にゴミ箱が多い 🇯🇵日本: ゴミ箱が少なく持ち帰りが基本",
+          "en": "🇺🇸USA: Many trash bins on streets 🇯🇵Japan: Few bins - taking trash with you is basic"
+        }
+      }
+    },
+    {
+      "id": "transport_08",
+      "category": {
+        "ja": "交通・公共空間",
+        "en": "Transport & Public Spaces"
+      },
+      "difficulty": 2,
+      "imageUrl": null,
+      "question": {
+        "ja": "混雑した電車で押し合うような状況になったらどうする?",
+        "en": "The crowded train becomes a pushing situation. What do you do?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "静かに待ってスペースを譲る",
+            "en": "Wait quietly and yield space"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "みんなで押し合って進む",
+            "en": "Push along with everyone"
+          },
+          "type": "conditional"
+        },
+        {
+          "text": {
+            "ja": "大声で「すみません！」と言う",
+            "en": "Shout \"Sumimasen!\""
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "押し合いは避けてみんなが安全に過ごせるようにしようね",
+          "en": "Let's avoid pushing so everyone stays safe"
+        },
+        "detail": {
+          "ja": "日本では混雑時も静かに待つのが基本。押し合いより譲り合いが大事だよ。",
+          "en": "In Japan wait quietly even when crowded. Yielding is more important than pushing."
+        },
+        "comparison": {
+          "ja": "🇨🇳中国: 混雑時は押し合いが普通 🇯🇵日本: 静かに待つのがマナー",
+          "en": "🇨🇳China: Pushing when crowded is normal 🇯🇵Japan: Waiting quietly is manners"
+        }
+      }
+    },
+    {
+      "id": "transport_09",
+      "category": {
+        "ja": "交通・公共空間",
+        "en": "Transport & Public Spaces"
+      },
+      "difficulty": 2,
+      "imageUrl": null,
+      "question": {
+        "ja": "駅のエスカレーターに乗る。どこに立つ?",
+        "en": "You're getting on an escalator at the station. Where do you stand?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "関東は左側・関西は右側に立つ",
+            "en": "Left in Kanto / Right in Kansai"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "真ん中に立つ",
+            "en": "Stand in the middle"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "急いでいる人用に両側空ける",
+            "en": "Leave both sides clear for rushers"
+          },
+          "type": "conditional"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "片側に立つとみんながスムーズに通れるよ",
+          "en": "Standing to one side keeps flow smooth!"
+        },
+        "detail": {
+          "ja": "東京などの関東は左側、大阪などの関西は右側に立つのが暗黙のルール。急ぐ人が反対側を通れるようにね。",
+          "en": "In Kanto (Tokyo) stand left; in Kansai (Osaka) stand right. This lets people in a hurry pass on the other side."
+        },
+        "comparison": {
+          "ja": "🇬🇧イギリス: 右側に立つ 🇯🇵日本: 地域で異なる（関東左・関西右）",
+          "en": "🇬🇧UK: Stand on right 🇯🇵Japan: Varies by region (Kanto left / Kansai right)"
+        }
+      }
+    },
+    {
+      "id": "transport_10",
+      "category": {
+        "ja": "交通・公共空間",
+        "en": "Transport & Public Spaces"
+      },
+      "difficulty": 2,
+      "imageUrl": "/assets/images/taxi.png",
+      "question": {
+        "ja": "タクシーに乗ろうとしている。ドアはどうする?",
+        "en": "You're about to get in a taxi. What about the door?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "自動で開くので待つ",
+            "en": "Wait - it opens automatically"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "自分で開ける",
+            "en": "Open it yourself"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "ノックして開けてもらう",
+            "en": "Knock for driver to open"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "自動ドアは日本のおもてなし！",
+          "en": "Automatic doors are Japanese hospitality!"
+        },
+        "detail": {
+          "ja": "日本のタクシーは後部座席ドアが自動開閉。無理に開けると壊れるかも。降りる時も自動だよ！",
+          "en": "Japanese taxi rear doors open/close automatically. Forcing it may break it. Auto-opens on exit too!"
+        },
+        "comparison": {
+          "ja": "🇺🇸アメリカ: 自分でドア開閉 🇯🇵日本: 自動ドアが標準",
+          "en": "🇺🇸USA: Open/close doors yourself 🇯🇵Japan: Automatic doors are standard"
+        }
+      }
+    },
+    {
+      "id": "hostel_01",
+      "category": {
+        "ja": "宿泊",
+        "en": "Stay & Accommodation"
+      },
+      "difficulty": 1,
+      "imageUrl": null,
+      "question": {
+        "ja": "日本のホテルや旅館の部屋に入ったらまず何をする?",
+        "en": "What's the first thing you do when entering a Japanese hotel/ryokan room?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "靴を脱いでスリッパに履き替える",
+            "en": "Remove shoes and change to slippers"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "靴のまま入って荷物を置く",
+            "en": "Keep shoes on and put down luggage"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "ベッドに座ってすぐ休む",
+            "en": "Sit on bed and rest immediately"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "靴を脱ぐと部屋が清潔に保たれるよ！みんなが快適に過ごせるね",
+          "en": "Removing shoes keeps rooms clean! Everyone stays comfortable"
+        },
+        "detail": {
+          "ja": "日本の宿泊施設は「土足厳禁」が基本。スリッパに履き替えると畳やフローリングが長持ちするんだ。",
+          "en": "Japanese accommodations are basically \"no shoes.\" Changing to slippers makes tatami/flooring last longer."
+        },
+        "comparison": {
+          "ja": "🇺🇸アメリカ: 靴を履いたまま部屋に入るのが普通 🇯🇵日本: 靴を脱ぐのが当たり前",
+          "en": "🇺🇸USA: Normal to enter rooms with shoes 🇯🇵Japan: Removing shoes is standard"
+        }
+      }
+    },
+    {
+      "id": "hostel_02",
+      "category": {
+        "ja": "宿泊",
+        "en": "Stay & Accommodation"
+      },
+      "difficulty": 1,
+      "imageUrl": null,
+      "question": {
+        "ja": "日本の大浴場や温泉に入る前に必ずすることは?",
+        "en": "What must you do before entering a Japanese communal bath/onsen?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "体をしっかり洗ってから入る",
+            "en": "Wash your body thoroughly before entering"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "すぐに湯船に飛び込む",
+            "en": "Jump straight into the bath"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "タオルを巻いたまま入る",
+            "en": "Enter with a towel wrapped"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "体を洗うとみんなが気持ちよく入れるよ！",
+          "en": "Washing first lets everyone bathe comfortably!"
+        },
+        "detail": {
+          "ja": "日本の温泉は「みんなで共有するお湯」。入る前に体を洗うのがエチケットだよ。",
+          "en": "Japanese onsen are \"shared baths.\" Washing before entering is etiquette."
+        },
+        "comparison": {
+          "ja": "🇰🇷韓国: スパでも体を洗う 🇯🇵日本: 入る前に必ず洗うのがルール",
+          "en": "🇰🇷Korea: Wash at spas too 🇯🇵Japan: Always wash before entering is the rule"
+        }
+      }
+    },
+    {
+      "id": "hostel_03",
+      "category": {
+        "ja": "宿泊",
+        "en": "Stay & Accommodation"
+      },
+      "difficulty": 2,
+      "imageUrl": null,
+      "question": {
+        "ja": "ホテルの部屋で夜遅くに大きな声で話したり音楽をかけたりするのは?",
+        "en": "Talking loudly or playing music late at night in a hotel room?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "静かにして周りに気を使う",
+            "en": "Be quiet and considerate of others"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "普通に楽しんでOK",
+            "en": "Enjoy normally"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "深夜までパーティーを開く",
+            "en": "Have a party until late"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "夜は静かにするのがみんなの心地よさにつながるよ",
+          "en": "Being quiet at night helps everyone feel comfortable"
+        },
+        "detail": {
+          "ja": "日本のホテルは壁が薄いことが多いので夜10時以降は特に静かにね。",
+          "en": "Japanese hotels often have thin walls so be especially quiet after 10pm."
+        },
+        "comparison": {
+          "ja": "🇺🇸アメリカ: ホテルでも夜遅くまで騒ぐ人も 🇯🇵日本: 夜は静かにするのが常識",
+          "en": "🇺🇸USA: Some make noise late in hotels 🇯🇵Japan: Being quiet at night is common sense"
+        }
+      }
+    },
+    {
+      "id": "hostel_04",
+      "category": {
+        "ja": "宿泊",
+        "en": "Stay & Accommodation"
+      },
+      "difficulty": 2,
+      "imageUrl": null,
+      "question": {
+        "ja": "チェックアウトの時部屋にゴミを残したまま出るのは?",
+        "en": "Leaving trash in the room when checking out?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "ゴミは分別してゴミ箱に捨てる",
+            "en": "Sort trash and put in bins"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "ベッドの下に隠しておく",
+            "en": "Hide under the bed"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "ゴミは軽く片付けておく",
+            "en": "Clean up trash lightly"
+          },
+          "type": "conditional"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "ゴミをきちんと処理すると清掃スタッフが喜ぶよ",
+          "en": "Properly handling trash makes cleaning staff happy"
+        },
+        "detail": {
+          "ja": "日本のホテルではゴミ分別が基本。チェックアウト前に分別したり、軽く片付けておこう。",
+          "en": "Trash sorting is standard at Japanese hotels. Sort trash or tidy up lightly before checkout."
+        },
+        "comparison": {
+          "ja": "🇨🇦カナダ: ゴミ分別が進んでいる 🇯🇵日本: さらに細かい分別が当たり前",
+          "en": "🇨🇦Canada: Trash sorting is advanced 🇯🇵Japan: Even more detailed sorting is standard"
+        }
+      }
+    },
+    {
+      "id": "hostel_05",
+      "category": {
+        "ja": "宿泊",
+        "en": "Stay & Accommodation"
+      },
+      "difficulty": 3,
+      "imageUrl": null,
+      "question": {
+        "ja": "旅館で予約したのに来れなくなった。どうする?",
+        "en": "You made a ryokan reservation but can't make it. What do you do?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "早めに連絡してキャンセルする",
+            "en": "Contact early and cancel"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "当日になってから連絡する",
+            "en": "Contact on the day"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "連絡せずに来ない",
+            "en": "Don't show up without contact"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "早めに連絡すると旅館側も助かるよ",
+          "en": "Contacting early helps the ryokan"
+        },
+        "detail": {
+          "ja": "日本の旅館は予約を大切にする文化。キャンセルは早めに連絡するのがマナーだよ。",
+          "en": "Japanese ryokans value reservations. Contacting early for cancellations is good manners."
+        },
+        "comparison": {
+          "ja": "🇫🇷フランス: キャンセルは当日でもOKな場合も 🇯🇵日本: 早めの連絡が基本",
+          "en": "🇫🇷France: Same-day cancellation sometimes OK 🇯🇵Japan: Early contact is basic"
+        }
+      }
+    },
+    {
+      "id": "hostel_06",
+      "category": {
+        "ja": "宿泊",
+        "en": "Stay & Accommodation"
+      },
+      "difficulty": 2,
+      "imageUrl": null,
+      "question": {
+        "ja": "カプセルホテルに泊まる。荷物はどこに置く?",
+        "en": "You're staying at a capsule hotel. Where do you put your luggage?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "指定のロッカーや荷物置き場",
+            "en": "Designated locker or luggage area"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "カプセル内に全部入れる",
+            "en": "Put everything inside capsule"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "通路に置いておく",
+            "en": "Leave in hallway"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "ロッカーを使うと安全で快適だよ",
+          "en": "Using lockers keeps things safe and tidy!"
+        },
+        "detail": {
+          "ja": "カプセル内は寝るスペースのみ。荷物はロッカーや専用スペースへ。みんなが快適に過ごせるようにね。",
+          "en": "Capsules are for sleeping only. Put luggage in lockers or designated areas so everyone stays comfortable."
+        },
+        "comparison": {
+          "ja": "🇸🇬シンガポール: ホステルも荷物スペース別 🇯🇵日本: カプセルは特に分離厳格",
+          "en": "🇸🇬Singapore: Hostels also separate luggage 🇯🇵Japan: Capsule hotels strictly separate storage"
+        }
+      }
+    },
+    {
+      "id": "hostel_07",
+      "category": {
+        "ja": "宿泊",
+        "en": "Stay & Accommodation"
+      },
+      "difficulty": 3,
+      "imageUrl": null,
+      "question": {
+        "ja": "Airbnbに泊まっている。ゴミはどうする?",
+        "en": "You're staying at an Airbnb. What about the trash?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "分別してゴミ箱に捨てるか説明を確認",
+            "en": "Sort and check host instructions"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "そのまま置いて帰る",
+            "en": "Just leave it when checking out"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "全部まとめて一つの袋に",
+            "en": "Put everything in one bag"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "分別するとホストも喜ぶよ！",
+          "en": "Sorting trash makes hosts happy!"
+        },
+        "detail": {
+          "ja": "日本のゴミ分別は細かいけど、Airbnbにはたいてい説明がある。可燃・不燃・ペットボトルなど分けておくと親切だよ。",
+          "en": "Japan's trash sorting is detailed but Airbnbs usually have instructions. Separating burnable/non-burnable/bottles is considerate."
+        },
+        "comparison": {
+          "ja": "🇩🇪ドイツ: 分別厳格 🇯🇵日本: さらに細分化（地域ごと）",
+          "en": "🇩🇪Germany: Strict sorting 🇯🇵Japan: Even more detailed (varies by area)"
+        }
+      }
+    },
+    {
+      "id": "hostel_08",
+      "category": {
+        "ja": "宿泊",
+        "en": "Stay & Accommodation"
+      },
+      "difficulty": 1,
+      "imageUrl": "/assets/images/yukata.png",
+      "question": {
+        "ja": "旅館で浴衣を着たい。どう着る?",
+        "en": "You want to wear a yukata at a ryokan. How do you put it on?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "左側を上にして右側を下に重ねる",
+            "en": "Left side over right"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "右側を上にして左側を下に重ねる",
+            "en": "Right side over left"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "どちらでも好きな方",
+            "en": "Either way is fine"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "左前を上にするのが正解だよ！",
+          "en": "Left over right is correct!"
+        },
+        "detail": {
+          "ja": "浴衣は「左前」（左側が上）に着るのが正解。右前は亡くなった人の着方だから注意してね。旅館の人に聞いてもOK！",
+          "en": "Yukata should be worn \"left over right.\" Right over left is for the deceased so be careful. Feel free to ask ryokan staff!"
+        },
+        "comparison": {
+          "ja": "🇰🇷韓国: 韓服も左前 🇯🇵日本: 浴衣・着物すべて左前",
+          "en": "🇰🇷Korea: Hanbok also left over right 🇯🇵Japan: All yukata/kimono left over right"
+        }
+      }
+    },
+    {
+      "id": "food_01",
+      "category": {
+        "ja": "食事",
+        "en": "Food & Dining"
+      },
+      "difficulty": 1,
+      "imageUrl": null,
+      "question": {
+        "ja": "日本のレストランで食事を始める前に何と言えばいい?",
+        "en": "What should you say before starting a meal at a Japanese restaurant?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "いただきます",
+            "en": "Itadakimasu"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "Let's eat!",
+            "en": "Let's eat!"
+          },
+          "type": "conditional"
+        },
+        {
+          "text": {
+            "ja": "Bon appétit!",
+            "en": "Bon appétit!"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "完璧！「いただきます」は食べ物への感謝を表す大切な言葉だよ。",
+          "en": "Perfect! \"Itadakimasu\" is an important word expressing gratitude for food."
+        },
+        "detail": {
+          "ja": "「いただきます」は\"I humbly receive\"といった意味。食べ物や作ってくれた人に感謝しながらいただくという気持ちの表れだよ。",
+          "en": "Itadakimasu means something like \"I humbly receive.\" It expresses gratitude for the food and the people who prepared it."
+        },
+        "comparison": {
+          "ja": "🇫🇷フランス: Bon appétit! 🇩🇪ドイツ: Guten Appetit! 🇰🇷韓国: 잘 먹겠습니다 🇯🇵日本: いただきます",
+          "en": "🇫🇷France: Bon appétit! 🇩🇪Germany: Guten Appetit! 🇰🇷Korea: 잘 먹겠습니다 🇯🇵Japan: Itadakimasu"
+        }
+      }
+    },
+    {
+      "id": "food_02",
+      "category": {
+        "ja": "食事",
+        "en": "Food & Dining"
+      },
+      "difficulty": 1,
+      "imageUrl": null,
+      "question": {
+        "ja": "日本料理を食べている。ちょっと休憩したい時箸をどこに置く?",
+        "en": "You're eating Japanese food and want to take a break. Where do you place chopsticks?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "テーブルか箸置きに横向きに置く",
+            "en": "Place horizontally on table or chopstick rest"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "お茶碗の上に橋のように置く",
+            "en": "Place across bowl like a bridge"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "ご飯に突き刺して立てる",
+            "en": "Stick upright in rice"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "箸を横に置くと清潔で丁寧だよ！",
+          "en": "Placing chopsticks horizontally is clean and polite!"
+        },
+        "detail": {
+          "ja": "休憩時は箸を置くのが基本。「渡し箸」や「立て箸」はしないように気を付けようね。",
+          "en": "Placing chopsticks down during breaks is basic. Be careful not to do \"crossing chopsticks\" or \"standing chopsticks.\""
+        },
+        "comparison": {
+          "ja": "🇨🇳中国: 箸を置く位置にこだわり少ない 🇯🇵日本: 箸置きを使うのが丁寧",
+          "en": "🇨🇳China: Less particular about chopstick placement 🇯🇵Japan: Using chopstick rests is polite"
+        }
+      }
+    },
+    {
+      "id": "food_03",
+      "category": {
+        "ja": "食事",
+        "en": "Food & Dining"
+      },
+      "difficulty": 2,
+      "imageUrl": null,
+      "question": {
+        "ja": "日本のレストランで美味しい食事を終えた。お皿を見ると少しご飯が残っている。どうする?",
+        "en": "You finished a delicious meal at a Japanese restaurant. There's a bit of rice left on the plate. What do you do?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "できるだけきれいに食べ切る",
+            "en": "Eat as cleanly as possible"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "わざと少し残して満腹のサインを出す",
+            "en": "Leave some intentionally to signal fullness"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "持ち帰り用の容器をもらう",
+            "en": "Ask for a to-go container"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "きれいに食べると料理人さんが喜ぶよ！",
+          "en": "Eating cleanly makes the chef happy!"
+        },
+        "detail": {
+          "ja": "日本では「もったいない」精神が強い。残さず食べるのが感謝の表れだよ。",
+          "en": "Japan has a strong \"mottainai\" (wasteful) spirit. Finishing food shows gratitude."
+        },
+        "comparison": {
+          "ja": "🇨🇳中国: 少し残すのがおもてなしの証 🇮🇳インド: 完食すると「もっと欲しい」という意味 🇯🇵日本: きれいに食べ切るのが感謝",
+          "en": "🇨🇳China: Leaving some shows hospitality 🇮🇳India: Finishing means \"want more\" 🇯🇵Japan: Eating cleanly shows gratitude"
+        }
+      }
+    },
+    {
+      "id": "food_04",
+      "category": {
+        "ja": "食事",
+        "en": "Food & Dining"
+      },
+      "difficulty": 2,
+      "imageUrl": null,
+      "question": {
+        "ja": "居酒屋で友達とビールを飲んでいる。友達のグラスが空になりそう。どうする?",
+        "en": "You're drinking beer with friends at an izakaya. Your friend's glass is almost empty. What do you do?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "友達のグラスにビールを注いであげる",
+            "en": "Pour beer into your friend's glass"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "他の飲み物を頼むか確認する",
+            "en": "Ask if they'd like something else to drink"
+          },
+          "type": "conditional"
+        },
+        {
+          "text": {
+            "ja": "「自分で注いで」と言う",
+            "en": "Tell them to pour themselves"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "注ぎ合うとみんなの絆が深まるよ！",
+          "en": "Pouring for each other deepens bonds!"
+        },
+        "detail": {
+          "ja": "日本ではお互いのグラスに注ぎ合うコミュニケーションがあるよ。",
+          "en": "In Japan there's a communication style of pouring for each other's glasses."
+        },
+        "comparison": {
+          "ja": "🇩🇪ドイツ: ビールは自分で注ぐのが普通 🇯🇵日本: お互いに注ぎ合うのが礼儀",
+          "en": "🇩🇪Germany: Normal to pour beer yourself 🇯🇵Japan: Pouring for each other is courtesy"
+        }
+      }
+    },
+    {
+      "id": "food_05",
+      "category": {
+        "ja": "食事",
+        "en": "Food & Dining"
+      },
+      "difficulty": 3,
+      "imageUrl": null,
+      "question": {
+        "ja": "高級レストランで懐石料理を食べている。お刺身とご飯が同時に出てきた。どちらから食べる?",
+        "en": "You're eating kaiseki at a high-end restaurant. Sashimi and rice arrive simultaneously. Which do you eat first?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "お刺身から食べる",
+            "en": "Start with sashimi"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "ご飯から食べる",
+            "en": "Start with rice"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "どちらでも好きな方から",
+            "en": "Either one is fine"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "お刺身からだと味の流れが美しいよ",
+          "en": "Starting with sashimi makes the flavor flow beautiful"
+        },
+        "detail": {
+          "ja": "懐石料理は「順番」が大事。お刺身→ご飯の流れで味覚を整えるんだ。",
+          "en": "Kaiseki values \"order.\" The sashimi→rice flow arranges your palate."
+        },
+        "comparison": {
+          "ja": "🇫🇷フランス: 前菜→メインの順 🇯🇵日本: お刺身→ご飯の流れが伝統",
+          "en": "🇫🇷France: Appetizer→main order 🇯🇵Japan: Sashimi→rice flow is tradition"
+        }
+      }
+    },
+    {
+      "id": "food_06",
+      "category": {
+        "ja": "食事",
+        "en": "Food & Dining"
+      },
+      "difficulty": 2,
+      "imageUrl": null,
+      "question": {
+        "ja": "飲食店で注文に迷っているとき店員さんをどう呼ぶ?",
+        "en": "How do you call a server when deciding what to order at a restaurant?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "静かに手を挙げて目で合図する",
+            "en": "Quietly raise hand and make eye contact"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "大声で「すみませーん！」と呼ぶ",
+            "en": "Shout \"Sumimasen!\""
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "指を鳴らして呼ぶ",
+            "en": "Snap fingers"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "静かに呼ぶと店員さんも気持ちよく対応してくれるよ",
+          "en": "Calling quietly makes servers respond comfortably"
+        },
+        "detail": {
+          "ja": "日本では店員を大声で呼ばない。手を挙げて優しく呼ぶのがマナーだよ。",
+          "en": "In Japan don't call servers loudly. Raising your hand gently is good manners."
+        },
+        "comparison": {
+          "ja": "🇺🇸アメリカ: 大声で呼ぶのが普通 🇯🇵日本: 静かに手を挙げるのが礼儀",
+          "en": "🇺🇸USA: Calling loudly is normal 🇯🇵Japan: Quietly raising hand is courtesy"
+        }
+      }
+    },
+    {
+      "id": "food_07",
+      "category": {
+        "ja": "食事",
+        "en": "Food & Dining"
+      },
+      "difficulty": 3,
+      "imageUrl": null,
+      "question": {
+        "ja": "居酒屋でお通しが出てきたけど頼んでいない。どうする?",
+        "en": "Otoshi (appetizer) arrives at an izakaya but you didn't order it. What do you do?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "「ありがとうございます」と受け取って楽しむ",
+            "en": "Say \"Arigatou gozaimasu\" and enjoy"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "すぐに「頼んでない」と断る",
+            "en": "Immediately refuse saying you didn't order"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "無視して放置する",
+            "en": "Ignore it"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "お通しはそのままいただいてOK！",
+          "en": "It's OK to just enjoy the otoshi!"
+        },
+        "detail": {
+          "ja": "居酒屋などの飲食店で、席について最初に飲み物を注文した際、料理が運ばれてくる前に出される小鉢料理のことだよ。",
+          "en": "At izakaya and restaurants it's a small dish served after you sit and order your first drink before your food arrives."
+        },
+        "comparison": {
+          "ja": "🇺🇸アメリカ: 頼んでないものは断るのが普通 🇯🇵日本: お通しは文化の一部",
+          "en": "🇺🇸USA: Normal to refuse things not ordered 🇯🇵Japan: Otoshi is part of culture"
+        }
+      }
+    },
+    {
+      "id": "food_08",
+      "category": {
+        "ja": "食事",
+        "en": "Food & Dining"
+      },
+      "difficulty": 2,
+      "imageUrl": "/assets/images/conveyor-belt-sushi.png",
+      "question": {
+        "ja": "回転寿司に初挑戦！どうやって取る?",
+        "en": "Your first time at conveyor belt sushi! How do you take plates?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "流れてくる皿を取るか、タッチパネルで注文",
+            "en": "Take plates from belt or order via touchscreen"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "間違って取った皿を戻す",
+            "en": "Put back a plate you took by mistake"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "他の人の皿を取る",
+            "en": "Take someone else's plate"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "好きな皿を取るだけ！簡単だよ",
+          "en": "Just grab what you like - easy!"
+        },
+        "detail": {
+          "ja": "流れてくる皿を自由に取ってOK。ただ、他のお客さんが注文した皿は取らないでね。タッチパネルでの注文も楽しいよ！",
+          "en": "You can freely take plates as they pass by. Just avoid taking plates ordered by others. Try ordering from the touch panel—it's fun!"
+        },
+        "comparison": {
+          "ja": "🇬🇧イギリス: Yo! Sushiも同じ形式 🇯🇵日本: 発祥地で種類も豊富",
+          "en": "🇬🇧UK: Yo! Sushi similar format 🇯🇵Japan: Birthplace with huge variety"
+        }
+      }
+    },
+    {
+      "id": "food_09",
+      "category": {
+        "ja": "食事",
+        "en": "Food & Dining"
+      },
+      "difficulty": 2,
+      "imageUrl": null,
+      "question": {
+        "ja": "ラーメン屋でラーメンが出てきた。どう食べる?",
+        "en": "Your ramen arrived at a ramen shop. How do you eat it?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "麺をすすって音を立てて食べる",
+            "en": "Slurp noodles making sound"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "静かに食べる",
+            "en": "Eat quietly"
+          },
+          "type": "conditional"
+        },
+        {
+          "text": {
+            "ja": "スープを派手に飛び散らせる",
+            "en": "Splash soup everywhere"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "ラーメンはすすって食べてOKだよ！",
+          "en": "It's OK to slurp ramen!"
+        },
+        "detail": {
+          "ja": "日本ではラーメンや蕎麦をすすって食べてOK。基本は音を立てずに食べるけれど、音を立てて食べてもいいものもあるんだ。熱々を楽しもう！",
+          "en": "In Japan it's OK to slurp ramen and soba. While eating quietly is basic some foods are fine to slurp. Enjoy it piping hot!"
+        },
+        "comparison": {
+          "ja": "🇮🇹イタリア: パスタすするのはNG 🇯🇵日本: 麺類はすするのが正解",
+          "en": "🇮🇹Italy: Slurping pasta is rude 🇯🇵Japan: Slurping noodles is correct"
+        }
+      }
+    },
+    {
+      "id": "communication_01",
+      "category": {
+        "ja": "コミュニケーション",
+        "en": "Communication"
+      },
+      "difficulty": 1,
+      "imageUrl": null,
+      "question": {
+        "ja": "日本人の友達との会話で「私」のことを言いたい。日本人はどこを指すことが多い?",
+        "en": "When talking with Japanese friends and wanting to say \"me\" where do Japanese people often point?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "鼻",
+            "en": "Nose"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "胸",
+            "en": "Chest"
+          },
+          "type": "conditional"
+        },
+        {
+          "text": {
+            "ja": "おでこ",
+            "en": "Forehead"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "鼻を指すのが日本流の「私」だよ！",
+          "en": "Pointing to the nose is the Japanese way of \"me\"!"
+        },
+        "detail": {
+          "ja": "日本人は「私」と言いたいとき鼻を指すことが多いんだ。不思議だけど可愛いよね。",
+          "en": "Japanese often point to their nose when saying \"me.\" Strange but cute right."
+        },
+        "comparison": {
+          "ja": "🇺🇸アメリカ: 胸を指す 🇯🇵日本: 鼻を指すのが一般的",
+          "en": "🇺🇸USA: Point to chest 🇯🇵Japan: Pointing to nose is common"
+        }
+      }
+    },
+    {
+      "id": "communication_02",
+      "category": {
+        "ja": "コミュニケーション",
+        "en": "Communication"
+      },
+      "difficulty": 1,
+      "imageUrl": "/assets/images/bow-greeting.png",
+      "question": {
+        "ja": "日本人の友達と初めて会った。どうやって挨拶する?",
+        "en": "You're meeting a Japanese friend for the first time. How do you greet them?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "軽くお辞儀(頭を下げる)をする",
+            "en": "Lightly bow (lower head)"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "握手する",
+            "en": "Shake hands"
+          },
+          "type": "conditional"
+        },
+        {
+          "text": {
+            "ja": "ハグする",
+            "en": "Hug them"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "軽いお辞儀で気持ちが伝わるよ",
+          "en": "Light bow conveys your feelings"
+        },
+        "detail": {
+          "ja": "日本では初対面で軽くお辞儀するのが基本。相手に敬意を示すんだ。",
+          "en": "In Japan lightly bowing at first meetings is basic. It shows respect to the other person."
+        },
+        "comparison": {
+          "ja": "🇺🇸アメリカ: 握手が普通 🇯🇵日本: お辞儀が自然",
+          "en": "🇺🇸USA: Handshake is normal 🇯🇵Japan: Bowing is natural"
+        }
+      }
+    },
+    {
+      "id": "communication_03",
+      "category": {
+        "ja": "コミュニケーション",
+        "en": "Communication"
+      },
+      "difficulty": 1,
+      "imageUrl": null,
+      "question": {
+        "ja": "浅草で素敵な写真スポットを発見！近くにいる日本人に撮影をお願いしたい。どう頼む?",
+        "en": "You found a great photo spot in Asakusa! How do you ask a nearby Japanese person to take your photo?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "軽くお辞儀して「写真お願いできますか？」とジェスチャー",
+            "en": "Bow lightly and ask with gestures"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "いきなりカメラを渡す",
+            "en": "Hand over camera suddenly"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "大声で「写真！」と叫ぶ",
+            "en": "Shout \"Photo!\""
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "お辞儀とジェスチャーで気持ちが伝わるよ！",
+          "en": "Bowing + gestures work perfectly!"
+        },
+        "detail": {
+          "ja": "日本人は英語が苦手な人も多いけど、ジェスチャーとスマイルで十分伝わる。カメラを構えて「お願いします」のジェスチャーをすればOK！",
+          "en": "Many Japanese aren't fluent in English but gestures + smile work great. Show camera + gesture \"please\" and you're good!"
+        },
+        "comparison": {
+          "ja": "🇺🇸アメリカ: 直接「Can you take a photo?」 🇯🇵日本: ジェスチャー + お辞儀が自然",
+          "en": "🇺🇸USA: Directly ask \"Can you take a photo?\" 🇯🇵Japan: Gestures + bow feel natural"
+        }
+      }
+    },
+    {
+      "id": "communication_04",
+      "category": {
+        "ja": "コミュニケーション",
+        "en": "Communication"
+      },
+      "difficulty": 2,
+      "imageUrl": null,
+      "question": {
+        "ja": "渋谷で道に迷った。誰に助けを求めるのが一番良い?",
+        "en": "You're lost in Shibuya. Who should you ask for help?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "駅員さんやコンビニ店員さん",
+            "en": "Station staff or convenience store clerk"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "道端の若者",
+            "en": "Random young people on street"
+          },
+          "type": "conditional"
+        },
+        {
+          "text": {
+            "ja": "急いでいそうなビジネスマン",
+            "en": "Busy-looking businessperson"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "駅員さんや店員さんは親切で英語対応も多いよ",
+          "en": "Station staff are kind and often speak English!"
+        },
+        "detail": {
+          "ja": "駅員さんは観光客慣れしていて、英語の案内も用意されていることが多い。コンビニ店員も丁寧に対応してくれるよ。困ったらまず「すみません」と声をかけてみよう！",
+          "en": "Station staff are used to tourists and often have English guides. Convenience store clerks are also helpful. Just say \"Sumimasen!\" to start!"
+        },
+        "comparison": {
+          "ja": "🇫🇷フランス: 若者に聞くのが普通 🇯🇵日本: 制服を着た人（駅員・店員）が安心",
+          "en": "🇫🇷France: Asking young people is normal 🇯🇵Japan: People in uniform (staff) are safest bet"
+        }
+      }
+    },
+    {
+      "id": "communication_05",
+      "category": {
+        "ja": "コミュニケーション",
+        "en": "Communication"
+      },
+      "difficulty": 2,
+      "imageUrl": null,
+      "question": {
+        "ja": "日本語が全くわからない。困った時どうする?",
+        "en": "You don't speak any Japanese. What should you do when in trouble?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "翻訳アプリ + ジェスチャーを使う",
+            "en": "Use translation app + gestures"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "英語で大声で話す",
+            "en": "Speak English loudly"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "諦めて黙る",
+            "en": "Give up and stay silent"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "翻訳アプリは強い味方！ジェスチャーも効果的だよ",
+          "en": "Translation apps + gestures are your best friends!"
+        },
+        "detail": {
+          "ja": "翻訳アプリで画面を見せ、ジェスチャーを加えれば解決できる。日本人は助けたい気持ちが強いから安心してね！",
+          "en": "Show translation app screen + gestures and you'll solve it. Japanese people genuinely want to help!"
+        },
+        "comparison": {
+          "ja": "🇮🇳インド: 英語が通じやすい 🇯🇵日本: 翻訳アプリ + ジェスチャーが最強",
+          "en": "🇮🇳India: English works often 🇯🇵Japan: Translation app + gestures = best combo"
+        }
+      }
+    },
+    {
+      "id": "communication_06",
+      "category": {
+        "ja": "コミュニケーション",
+        "en": "Communication"
+      },
+      "difficulty": 1,
+      "imageUrl": null,
+      "question": {
+        "ja": "日本人の友達と会って楽しく過ごした。帰り際、どうする?",
+        "en": "You had a great time with your Japanese friend. How do you say goodbye?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "「また会おうね」とあいさつする",
+            "en": "Say \"Let's meet again\""
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "ハイタッチする",
+            "en": "Give a high five"
+          },
+          "type": "conditional"
+        },
+        {
+          "text": {
+            "ja": "何も言わずに去る",
+            "en": "Leave without saying anything"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "笑顔とあいさつで気持ちが伝わるよ",
+          "en": "A smile and greeting convey your feelings"
+        },
+        "detail": {
+          "ja": "日本では別れ際に「また会おうね」や「気をつけて帰ってね」と声をかけることが多いよ。関係性が深まるきっかけになるんだ。",
+          "en": "In Japan, people often say \"Let's meet again\" or \"Get home safely\" when parting. It helps deepen the relationship."
+        },
+        "comparison": {
+          "ja": "🇫🇷フランス: 頬にキスして別れる 🇯🇵日本: 言葉で別れを伝える",
+          "en": "🇫🇷France: Kiss on cheeks when parting 🇯🇵Japan: Express farewells with words"
+        }
+      }
+    },
+    {
+      "id": "communication_07",
+      "category": {
+        "ja": "コミュニケーション",
+        "en": "Communication"
+      },
+      "difficulty": 2,
+      "imageUrl": null,
+      "question": {
+        "ja": "東京駅で新幹線乗り場がわからない。どう聞く?",
+        "en": "You can't find the Shinkansen platform at Tokyo Station. How do you ask?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "「すみません、新幹線はどこですか？」+ ジェスチャー",
+            "en": "Say \"Sumimasen Shinkansen doko?\" + gesture"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "英語で「Where is Shinkansen?」と大声で聞く",
+            "en": "Shout in English \"Where is Shinkansen?\""
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "誰かについていく",
+            "en": "Just follow someone"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "「すみません」から始めると相手も安心するよ",
+          "en": "Starting with \"Sumimasen\" puts people at ease!"
+        },
+        "detail": {
+          "ja": "「すみません」は魔法の言葉。その後に「新幹線」と言って指差しジェスチャーをすれば、ほとんどの人が教えてくれる。駅員さんを探すのもGood！",
+          "en": "Sumimasen is a magic word. Follow with \"Shinkansen\" + pointing gesture and most people will help. Finding station staff is also great!"
+        },
+        "comparison": {
+          "ja": "🇩🇪ドイツ: 直接「Where is...?」でOK 🇯🇵日本: 「すみません」から始めると丁寧",
+          "en": "🇩🇪Germany: Directly \"Where is...?\" works 🇯🇵Japan: Starting with \"Sumimasen\" is polite"
+        }
+      }
+    },
+    {
+      "id": "communication_08",
+      "category": {
+        "ja": "コミュニケーション",
+        "en": "Communication"
+      },
+      "difficulty": 2,
+      "imageUrl": null,
+      "question": {
+        "ja": "コンビニで店員さんに助けてもらった。何と言う?",
+        "en": "A convenience store clerk helped you. What do you say?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "「ありがとうございます」+ 軽くお辞儀",
+            "en": "Say \"Arigatou gozaimasu\" + light bow"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "「Thank you」という",
+            "en": "Say \"Thank you\""
+          },
+          "type": "conditional"
+        },
+        {
+          "text": {
+            "ja": "何も言わずに去る",
+            "en": "Leave without saying anything"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "感謝の気持ちを伝えるとみんな笑顔になるよ！",
+          "en": "Showing gratitude makes everyone smile!"
+        },
+        "detail": {
+          "ja": "「ありがとうございます」は日本語で一番大切な言葉の一つ。発音が難しくても「ありがとう」だけでも十分。お辞儀を添えると完璧だよ！",
+          "en": "Arigatou gozaimasu is one of the most important phrases. Even just \"Arigatou\" is enough. Add a bow and it's perfect!"
+        },
+        "comparison": {
+          "ja": "🇺🇸アメリカ: \"Thanks!\" でカジュアルに 🇯🇵日本: 「ありがとうございます」+ お辞儀が丁寧",
+          "en": "🇺🇸USA: Casual \"Thanks!\" works 🇯🇵Japan: \"Arigatou gozaimasu\" + bow is polite"
+        }
+      }
+    },
+    {
+      "id": "home_01",
+      "category": {
+        "ja": "日常・生活",
+        "en": "Home & Daily Life"
+      },
+      "difficulty": 1,
+      "imageUrl": "/assets/images/gomi-station.png",
+      "question": {
+        "ja": "日本のアパートに引っ越した。ゴミはいつ出せる?",
+        "en": "You moved into a Japanese apartment. When can you put out trash?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "決められた曜日と時間",
+            "en": "On designated days and times"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "いつでも好きな時",
+            "en": "Anytime you want"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "夜中にこっそり",
+            "en": "Secretly at night"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "ゴミ出しのルールを守ろう",
+          "en": "Follow garbage disposal rules!"
+        },
+        "detail": {
+          "ja": "日本はゴミ分別と曜日が厳格。ルールを守るのがみんなの快適につながるんだ。",
+          "en": "Japan is strict about trash sorting and days. Following rules leads to everyone's comfort."
+        },
+        "comparison": {
+          "ja": "🇺🇸アメリカ: ゴミは週1回 🇯🇵日本: 分別＋曜日が細かい",
+          "en": "🇺🇸USA: Trash once a week 🇯🇵Japan: Sorting + days are detailed"
+        }
+      }
+    },
+    {
+      "id": "home_02",
+      "category": {
+        "ja": "日常・生活",
+        "en": "Home & Daily Life"
+      },
+      "difficulty": 1,
+      "imageUrl": null,
+      "question": {
+        "ja": "アパートの隣人と初めて会った。どう挨拶する?",
+        "en": "You met your apartment neighbor for the first time. How do you greet them?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "軽く会釈して「こんにちは」と言う",
+            "en": "Bow lightly and say \"Konnichiwa\""
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "無視して通り過ぎる",
+            "en": "Ignore and pass"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "じっくり自己紹介を始める",
+            "en": "Start a long self-introduction"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "軽い挨拶で距離が縮まるよ",
+          "en": "Light greetings bring people closer"
+        },
+        "detail": {
+          "ja": "挨拶は日本の近所付き合いの第一歩。簡単な「こんにちは」でOKだよ。",
+          "en": "Greetings are the first step in Japanese neighbor relations. Simple \"Konnichiwa\" is OK."
+        },
+        "comparison": {
+          "ja": "🇺🇸アメリカ: 自己紹介が長め 🇯🇵日本: 軽い会釈で十分",
+          "en": "🇺🇸USA: Longer self-introductions 🇯🇵Japan: Light bow is enough"
+        }
+      }
+    },
+    {
+      "id": "home_03",
+      "category": {
+        "ja": "日常・生活",
+        "en": "Home & Daily Life"
+      },
+      "difficulty": 2,
+      "imageUrl": null,
+      "question": {
+        "ja": "夜10時以降アパートで何に気をつける?",
+        "en": "What should you be careful about in an apartment after 10pm?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "音量に気をつける(テレビ・音楽・足音など)",
+            "en": "Keep volume down (TV music footsteps etc)"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "特に何も気にしない",
+            "en": "Nothing particular"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "パーティーを開く",
+            "en": "Throw a party"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "夜は静かにするとみんながぐっすり眠れるよ",
+          "en": "Being quiet at night lets everyone sleep well"
+        },
+        "detail": {
+          "ja": "日本のアパートは壁が薄いことが多い。夜10時以降は特に静かに。隣の部屋の人も感謝するよ。",
+          "en": "Japanese apartments often have thin walls. Be especially quiet after 10pm. Your neighbors will appreciate it."
+        },
+        "comparison": {
+          "ja": "🇺🇸アメリカ: 夜遅くまで音OKな場合も 🇯🇵日本: 夜は静かにするのが常識",
+          "en": "🇺🇸USA: Sometimes OK to make noise late 🇯🇵Japan: Being quiet at night is common sense"
+        }
+      }
+    },
+    {
+      "id": "home_04",
+      "category": {
+        "ja": "日常・生活",
+        "en": "Home & Daily Life"
+      },
+      "difficulty": 2,
+      "imageUrl": null,
+      "question": {
+        "ja": "近所の人から野菜をもらった。どうする?",
+        "en": "A neighbor gave you vegetables. What do you do?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "タイミングを見てお返しの品を渡す",
+            "en": "Give a return gift at an appropriate time"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "ありがとうとお礼を言う",
+            "en": "Just say thank you"
+          },
+          "type": "conditional"
+        },
+        {
+          "text": {
+            "ja": "無視する",
+            "en": "Ignore it"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "お返しするとご近所さんの絆が深まるよ",
+          "en": "Returning the favor deepens neighbor bonds"
+        },
+        "detail": {
+          "ja": "何かをもらったら、ちょっとしたお菓子やお礼品で気持ちを伝え合うことがあるよ。",
+          "en": "When you receive something there's a custom of exchanging feelings with small sweets or thank-you gifts."
+        },
+        "comparison": {
+          "ja": "🇹🇭タイ: お返し文化もある 🇯🇵日本: お返しをする人が多い",
+          "en": "🇹🇭Thailand: Return culture exists too 🇯🇵Japan: Many people give return gifts"
+        }
+      }
+    },
+    {
+      "id": "home_05",
+      "category": {
+        "ja": "日常・生活",
+        "en": "Home & Daily Life"
+      },
+      "difficulty": 3,
+      "imageUrl": null,
+      "question": {
+        "ja": "引っ越しの挨拶に行く。何を持っていく?",
+        "en": "You're going to greet neighbors after moving. What do you bring?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "500-1000円程度の日用品(タオルお菓子など)",
+            "en": "Daily goods around ¥500-1000 (towels sweets etc)"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "何も持っていかないが軽くあいさつをする",
+            "en": "Don't bring anything, but give a light greeting"
+          },
+          "type": "conditional"
+        },
+        {
+          "text": {
+            "ja": "高価なプレゼント",
+            "en": "Expensive gift"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "ちょっとしたお菓子で気持ちが伝わるよ",
+          "en": "Small sweets convey your feelings"
+        },
+        "detail": {
+          "ja": "引っ越しの挨拶時の粗品はマストではないから状況に応じて対応してね。",
+          "en": "A small gift when moving in isn't mandatory, so decide based on the situation."
+        },
+        "comparison": {
+          "ja": "🇺🇸アメリカ: 手作り料理をよく持っていく 🇯🇵日本: 日用品や粗品を渡すことがある",
+          "en": "🇺🇸USA: Often bring homemade food 🇯🇵Japan:Sometimes give daily necessities or small gifts"
+        }
+      }
+    },
+    {
+      "id": "home_06",
+      "category": {
+        "ja": "日常・生活",
+        "en": "Home & Daily Life"
+      },
+      "difficulty": 2,
+      "imageUrl": null,
+      "question": {
+        "ja": "宅配便が届く予定だけど不在になりそう。どうする?",
+        "en": "A delivery is coming but you'll be out. What do you do?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "再配達依頼するか、時間指定する",
+            "en": "Request redelivery or specify time"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "そのまま放置する",
+            "en": "Just leave it"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "玄関前に置いてもらう配送方法に変更する",
+            "en": "Switch to contactless delivery"
+          },
+          "type": "conditional"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "再配達は簡単！ドライバーさんも助かるよ",
+          "en": "Redelivery is easy and helps drivers!"
+        },
+        "detail": {
+          "ja": "日本の宅配は再配達が無料で簡単。不在票が入ったらQRコードや電話で時間指定できるよ。コンビニ受取も便利！",
+          "en": "Japan's delivery allows free easy redelivery. Use QR code or phone from absence notice to specify time. Convenience store pickup also works!"
+        },
+        "comparison": {
+          "ja": "🇺🇸アメリカ: 玄関に置いていく 🇯🇵日本: 手渡しか置き配が多い",
+          "en": "🇺🇸USA: Left at doorstep 🇯🇵Japan: Hand delivery or contactless delivery is common"
+        }
+      }
+    },
+    {
+      "id": "home_07",
+      "category": {
+        "ja": "日常・生活",
+        "en": "Home & Daily Life"
+      },
+      "difficulty": 2,
+      "imageUrl": "/assets/images/bicycle-lane.png",
+      "question": {
+        "ja": "自転車に乗りたい。どこを走る?",
+        "en": "You want to ride a bicycle. Where do you ride?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "車道の左側（歩道は例外的に可）",
+            "en": "Left side of road (sidewalk exceptionally OK)"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "歩道を自由に走る",
+            "en": "Freely ride on sidewalk"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "車道の真ん中",
+            "en": "Middle of road"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "車道の左側が基本だよ",
+          "en": "Left side of road is the rule!"
+        },
+        "detail": {
+          "ja": "日本では自転車は車道の左側通行が原則だよ。車に気を付けながら走ってね。",
+          "en": "In Japan bicycles ride on the left side of roads as a rule. Be careful of cars while riding."
+        },
+        "comparison": {
+          "ja": "🇳🇱オランダ: 自転車専用道が充実 🇯🇵日本: 車道左側が原則",
+          "en": "🇳🇱Netherlands: Extensive bike lanes 🇯🇵Japan: Left side of road in principle"
+        }
+      }
+    },
+    {
+      "id": "home_08",
+      "category": {
+        "ja": "日常・生活",
+        "en": "Home & Daily Life"
+      },
+      "difficulty": 1,
+      "imageUrl": null,
+      "question": {
+        "ja": "Wi-Fiを使いたい。どうする?",
+        "en": "You want to use public Wi-Fi. What do you do?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "フリーWi-Fi（Japan Free Wi-Fi）に接続",
+            "en": "Connect to free Wi-Fi (Japan Free Wi-Fi)"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "パスワードを推測して接続",
+            "en": "Guess password and connect"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "使えない",
+            "en": "Can't use it"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "フリーWi-Fiは旅行者の味方！",
+          "en": "Free Wi-Fi is a traveler's friend!"
+        },
+        "detail": {
+          "ja": "観光の拠点（空港、駅、コンビニ）では、ほぼ無料でWi-Fiが利用可能。eSIMやポケットWiFiレンタルも推奨されているよ。 ",
+          "en": "Free Wi-Fi is available at most tourist hubs (airports, stations, convenience stores). eSIM or pocket Wi-Fi rental is also recommended."
+        },
+        "comparison": {
+          "ja": "🇰🇷韓国: 公共Wi-Fi充実 🇯🇵日本: 主要スポットで利用可",
+          "en": "🇰🇷Korea: Abundant public Wi-Fi 🇯🇵Japan: Available at major spots"
+        }
+      }
+    },
+    {
+      "id": "temple_01",
+      "category": {
+        "ja": "神社・温泉",
+        "en": "Temple Shrine & Onsen"
+      },
+      "difficulty": 1,
+      "imageUrl": "/assets/images/torii-gate.png",
+      "question": {
+        "ja": "神社の鳥居をくぐる時どこを歩く?",
+        "en": "Where do you walk when passing through a torii gate at a shrine?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "端の方",
+            "en": "To the side"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "真ん中",
+            "en": "Center"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "どこでもいい",
+            "en": "Anywhere is fine"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "参道の中央は神様の通り道だよ",
+          "en": "The center of the path is for the deity."
+        },
+        "detail": {
+          "ja": "鳥居の前で一礼してから、左右どちらかの端を歩いて神域へ入ろう",
+          "en": "Bow before the torii gate, then walk along either side to enter the sacred area."
+        },
+        "comparison": {
+          "ja": "🇺🇸アメリカ: 門は自由に通る 🇯🇵日本: 端を歩くのがマナー",
+          "en": "🇺🇸USA: Pass through gates freely 🇯🇵Japan: Walking on the side is manners"
+        }
+      }
+    },
+    {
+      "id": "temple_02",
+      "category": {
+        "ja": "神社・温泉",
+        "en": "Temple Shrine & Onsen"
+      },
+      "difficulty": 1,
+      "imageUrl": "/assets/images/temizuya.png",
+      "question": {
+        "ja": "神社の手水舎(ちょうずや)で何をする?",
+        "en": "What do you do at a temizuya (water purification basin) at a shrine?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "手と口を清める",
+            "en": "Cleanse hands and mouth"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "水を飲む",
+            "en": "Drink the water"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "写真を撮るだけ",
+            "en": "Just take photos"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "清めると心もすっきりするよ",
+          "en": "Cleansing refreshes your spirit too"
+        },
+        "detail": {
+          "ja": "手水舎は身と心を清める場所。左手→右手→口→柄杓の順でね。",
+          "en": "Temizuya is a place to purify body and mind. Order: left hand→right hand→mouth→ladle handle."
+        },
+        "comparison": {
+          "ja": "🇮🇳インド: 水で清める習慣もある 🇯🇵日本: 決まった順序で行う",
+          "en": "🇮🇳India: Water purification customs exist 🇯🇵Japan: Follow set order"
+        }
+      }
+    },
+    {
+      "id": "temple_03",
+      "category": {
+        "ja": "神社・温泉",
+        "en": "Temple Shrine & Onsen"
+      },
+      "difficulty": 2,
+      "imageUrl": null,
+      "question": {
+        "ja": "神社でお参りする時はどのように合掌する？",
+        "en": "How do you put your hands together when praying at a shrine?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "思いをこめて合掌する",
+            "en": "Put your hands together and pray sincerely"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "二礼二拍手一礼など、神社ごとの作法に従う",
+            "en": "Follow the shrine's ritual (two bows, two claps, one bow)"
+          },
+          "type": "conditional"
+        },
+        {
+          "text": {
+            "ja": "パチパチパチと拍手をする",
+            "en": "Give a round of applause"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "神様に向けて気持ち込めて合掌しよう",
+          "en": "Put your hands together and pray to the deity with sincerity"
+        },
+        "detail": {
+          "ja": "神社の合掌では心を込めることが一番大切だよ。",
+          "en": "At shrines, praying with sincerity is most important."
+        },
+        "comparison": {
+          "ja": "🇰🇷韓国: 両手を合わせて祈る 🇯🇵日本: 2礼2拍手1礼",
+          "en": "🇰🇷Korea: Put hands together and pray 🇯🇵Japan: 2 bows 2 claps 1 bow"
+        }
+      }
+    },
+    {
+      "id": "temple_04",
+      "category": {
+        "ja": "神社・温泉",
+        "en": "Temple Shrine & Onsen"
+      },
+      "difficulty": 2,
+      "imageUrl": null,
+      "question": {
+        "ja": "温泉に入る前に必ずすることは?",
+        "en": "What must you do before entering an onsen?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "体を洗う",
+            "en": "Wash your body"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "水着を着る",
+            "en": "Wear a swimsuit"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "タオルを持って湯船に入る",
+            "en": "Bring a towel into the bath"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "体を洗うとみんなが気持ちよく入れるよ",
+          "en": "Washing first lets everyone bathe comfortably"
+        },
+        "detail": {
+          "ja": "温泉はみんなで共有するお湯。入る前に体を洗うのがエチケット。",
+          "en": "Onsen are shared baths. Washing before entering is etiquette."
+        },
+        "comparison": {
+          "ja": "🇰🇷韓国: スパでも体を洗う 🇯🇵日本: 入る前に必ず洗う",
+          "en": "🇰🇷Korea: Wash at spas too 🇯🇵Japan: Always wash before entering"
+        }
+      }
+    },
+    {
+      "id": "temple_05",
+      "category": {
+        "ja": "神社・温泉",
+        "en": "Temple Shrine & Onsen"
+      },
+      "difficulty": 3,
+      "imageUrl": null,
+      "question": {
+        "ja": "お寺で写真撮影何に気をつける?",
+        "en": "What should you be careful about when taking photos at a temple?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "撮影禁止の表示を確認し本堂内は避ける",
+            "en": "Check no-photo signs and avoid inside main hall"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "どこでも自由に撮影できる",
+            "en": "You can photograph anywhere"
+          },
+          "type": "wrong"
+        },
+        {
+          "text": {
+            "ja": "写真撮影可能なスポットを探す",
+            "en": "Look for photo-friendly spots"
+          },
+          "type": "conditional"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "撮影ルールを守るとみんなが気持ちよく観光できるよ",
+          "en": "Following photo rules lets everyone tour comfortably"
+        },
+        "detail": {
+          "ja": "お寺の本堂内や仏像は撮影禁止が多い。案内表示をよく見てね。",
+          "en": "Temple main halls and Buddha statues often prohibit photos. Check the information signs carefully."
+        },
+        "comparison": {
+          "ja": "🇮🇹イタリア: 教会内でもフラッシュNGが多い 🇯🇵日本: 場所によって細かくルール",
+          "en": "🇮🇹Italy: Many churches prohibit flash 🇯🇵Japan: Detailed rules by location"
+        }
+      }
+    },
+    {
+      "id": "temple_06",
+      "category": {
+        "ja": "神社・温泉",
+        "en": "Temple Shrine & Onsen"
+      },
+      "difficulty": 2,
+      "imageUrl": null,
+      "question": {
+        "ja": "神社でお守りを買った。どう扱う?",
+        "en": "You bought an omamori (charm) at a shrine. How do you handle it?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "カバンや財布に大切に入れる",
+            "en": "Keep carefully in bag or wallet"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "おみやげとして他の人にあげる",
+            "en": "Give it as a souvenir to someone"
+          },
+          "type": "conditional"
+        },
+        {
+          "text": {
+            "ja": "開けて中身を見る",
+            "en": "Open it to see inside"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "お守りは大切に持つと願いが叶うよ",
+          "en": "Carrying omamori carefully helps wishes come true!"
+        },
+        "detail": {
+          "ja": "お守りは開けずにそのまま持つのが基本。1年後に返納して新しいものを買うのが伝統だよ。他の人へのプレゼントもOK！",
+          "en": "Don't open omamori - carry as-is. Tradition is to return it after a year and get a new one. Giving as gifts is also OK!"
+        },
+        "comparison": {
+          "ja": "🇹🇭タイ: お守りは開けて見ることも 🇯🇵日本: 開けずに持つ",
+          "en": "🇹🇭Thailand: Amulets sometimes opened 🇯🇵Japan: Don't open - keep sealed"
+        }
+      }
+    },
+    {
+      "id": "temple_07",
+      "category": {
+        "ja": "神社・温泉",
+        "en": "Temple Shrine & Onsen"
+      },
+      "difficulty": 3,
+      "imageUrl": "/assets/images/goshuin-book.png",
+      "question": {
+        "ja": "お寺で御朱印をもらいたい。どうする?",
+        "en": "You want to get a goshuin (temple stamp) at a temple. How?"
+      },
+      "options": [
+        {
+          "text": {
+            "ja": "御朱印帳を持って受付で「お願いします」と言う",
+            "en": "Bring a goshuin book and ask at the reception"
+          },
+          "type": "best"
+        },
+        {
+          "text": {
+            "ja": "書き置きの御朱印をもらう",
+            "en": "Get a pre-written goshuin"
+          },
+          "type": "conditional"
+        },
+        {
+          "text": {
+            "ja": "自分でスタンプを押す",
+            "en": "Stamp it yourself"
+          },
+          "type": "wrong"
+        }
+      ],
+      "feedback": {
+        "point": {
+          "ja": "御朱印帳があると本格的！",
+          "en": "Having a goshuin book is authentic!"
+        },
+        "detail": {
+          "ja": "御朱印はスタンプラリーではなく、参拝の証。参拝してから御朱印をもらいにいこう。",
+          "en": "Goshuin are not just stamps, but proof of worship. Visit the temple first, then get your goshuin."
+        },
+        "comparison": {
+          "ja": "🇪🇸スペイン: 巡礼手帳にスタンプ 🇯🇵日本: 御朱印は参拝の証",
+          "en": "🇪🇸Spain: Pilgrim passport stamps 🇯🇵Japan: Goshuin are proof of worship"
+        }
+      }
+    }
+  ],
+  "chats": [
+    {
+      "id": "chat_transport_01",
+      "category": "Transport & Public Spaces",
+      "text": {
+        "ja": "日本の電車は車内がきれいで旅行者は驚くそうだよ！",
+        "en": "Japanese trains are so clean that travelers are often surprised!"
+      }
+    },
+    {
+      "id": "chat_transport_02",
+      "category": "Transport & Public Spaces",
+      "text": {
+        "ja": "道に迷ったら交番やガイドさんに聞くといいよ",
+        "en": "If you get lost ask at police boxes or information centers"
+      }
+    },
+    {
+      "id": "chat_transport_03",
+      "category": "Transport & Public Spaces",
+      "text": {
+        "ja": "日本では有名人が歩いてても話しかけない人が多いんだって！",
+        "en": "In Japan many people don't approach celebrities even when they see them walking!"
+      }
+    },
+    {
+      "id": "chat_transport_04",
+      "category": "Transport & Public Spaces",
+      "text": {
+        "ja": "キャリーケースはホテルへ郵送すると移動が楽になるよ！",
+        "en": "Shipping your suitcase to the hotel makes travel easier!"
+      }
+    },
+    {
+      "id": "chat_stay_01",
+      "category": "Stay & Accommodation",
+      "text": {
+        "ja": "トビに唐揚げを取られるのは日本あるあるかも",
+        "en": "Having fried chicken stolen by a kite might be a classic Japan moment"
+      }
+    },
+    {
+      "id": "chat_stay_02",
+      "category": "Stay & Accommodation",
+      "text": {
+        "ja": "落とし物をしたら、交番やお店、宿泊先などに確認してみよう！",
+        "en": "If you lose something check police boxes shops or your accommodation!"
+      }
+    },
+    {
+      "id": "chat_stay_03",
+      "category": "Stay & Accommodation",
+      "text": {
+        "ja": "日本は自転車や傘のレンタルサービスがあるよ",
+        "en": "Japan has bicycle and umbrella rental services"
+      }
+    },
+    {
+      "id": "chat_stay_04",
+      "category": "Stay & Accommodation",
+      "text": {
+        "ja": "チェックイン前でも荷物を預かってくれるホテルが多いよ",
+        "en": "Many hotels will hold your luggage even before check-in"
+      }
+    },
+    {
+      "id": "chat_food_01",
+      "category": "Food & Dining",
+      "text": {
+        "ja": "日本はどこにでもコンビニがある！",
+        "en": "Japan has convenience stores everywhere!"
+      }
+    },
+    {
+      "id": "chat_food_02",
+      "category": "Food & Dining",
+      "text": {
+        "ja": "日本はキャッシュオンリーのお店もまだたくさんあるよ",
+        "en": "Many shops in Japan are still cash-only"
+      }
+    },
+    {
+      "id": "chat_food_03",
+      "category": "Food & Dining",
+      "text": {
+        "ja": "日本はハラルフードやベジタリアン向けメニューがないお店が多いかも",
+        "en": "Many restaurants in Japan may not have halal or vegetarian options"
+      }
+    },
+    {
+      "id": "chat_food_04",
+      "category": "Food & Dining",
+      "text": {
+        "ja": "飲食店のリアルな食品サンプルは見ていて楽しいよね",
+        "en": "Realistic food samples at restaurants are fun to look at right"
+      }
+    },
+    {
+      "id": "chat_communication_01",
+      "category": "Communication",
+      "text": {
+        "ja": "レジ袋は必要な時だけ購入してね",
+        "en": "Only buy plastic bags when you need them"
+      }
+    },
+    {
+      "id": "chat_communication_02",
+      "category": "Communication",
+      "text": {
+        "ja": "寺社仏閣での写真撮影には気を付けてね",
+        "en": "Be careful when taking photos at temples and shrines"
+      }
+    },
+    {
+      "id": "chat_communication_03",
+      "category": "Communication",
+      "text": {
+        "ja": "日本では一人で飲食店に行ったり旅行をするのは普通だよ",
+        "en": "Going to restaurants or traveling alone is completely normal in Japan"
+      }
+    },
+    {
+      "id": "chat_communication_04",
+      "category": "Communication",
+      "text": {
+        "ja": "翻訳アプリがあると便利だよ",
+        "en": "Translation apps are very helpful"
+      }
+    },
+    {
+      "id": "chat_home_01",
+      "category": "Home & Daily Life",
+      "text": {
+        "ja": "いろんな季節の行事があるから楽しんでね",
+        "en": "Japan has many seasonal events so enjoy them"
+      }
+    },
+    {
+      "id": "chat_home_02",
+      "category": "Home & Daily Life",
+      "text": {
+        "ja": "公園ではハトが寄ってくることがあるよ",
+        "en": "Pigeons may approach you in parks"
+      }
+    },
+    {
+      "id": "chat_home_03",
+      "category": "Home & Daily Life",
+      "text": {
+        "ja": "ゴミの捨て方には気を付けようね",
+        "en": "Be careful about how you dispose of trash"
+      }
+    },
+    {
+      "id": "chat_home_04",
+      "category": "Home & Daily Life",
+      "text": {
+        "ja": "日本ではビーチクリーンやタウンクリーンも盛んだよ",
+        "en": "Beach cleaning and town cleaning activities are popular in Japan"
+      }
+    },
+    {
+      "id": "chat_temple_01",
+      "category": "Temple Shrine & Onsen",
+      "text": {
+        "ja": "日本の温泉は種類が豊富で楽しめるよ",
+        "en": "Japan has many types of hot springs to enjoy"
+      }
+    },
+    {
+      "id": "chat_temple_02",
+      "category": "Temple Shrine & Onsen",
+      "text": {
+        "ja": "寺社仏閣の空気って気持ちいいよね！",
+        "en": "The atmosphere at temples and shrines feels so good right!"
+      }
+    },
+    {
+      "id": "chat_temple_03",
+      "category": "Temple Shrine & Onsen",
+      "text": {
+        "ja": "参拝の順路が決まっている寺社仏閣もあるよ",
+        "en": "Some temples and shrines have designated visiting routes"
+      }
+    },
+    {
+      "id": "chat_temple_04",
+      "category": "Temple Shrine & Onsen",
+      "text": {
+        "ja": "温泉に入る前は必ず体を洗おうね",
+        "en": "Always wash your body before entering the hot spring"
+      }
+    }
+  ]
+}

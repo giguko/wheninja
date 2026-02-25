@@ -1,0 +1,27 @@
+{
+  "name": "Wheninjapan - Culture Quiz",
+  "short_name": "WHENINJA",
+  "description": "日本文化やマナーをシェアしてなかよくなるクイズアプリ",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFBF0",
+  "theme_color": "#4DC8C8",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "lifestyle", "travel"],
+  "lang": "ja",
+  "dir": "ltr"
+}
