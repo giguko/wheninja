@@ -778,13 +778,25 @@ const App = {
     const progress = nextLevelPoints === Infinity ? 100 : 
       Math.min(100, ((this.userData.totalPoints - currentLevelBase) / (nextLevelPoints - currentLevelBase)) * 100);
     
+    // 全6カテゴリー完了済みかどうか（Bug 3 対策：完了後はカード選択を無効化）
+    const allCategoriesComplete = this.userData.completedCategories.length === 6;
+
     let categoriesHtml = '';
     categories.forEach(cat => {
       const prog = QuizManager.getCategoryProgress(cat.id, this.userData);
       const catName = lang === 'ja' ? cat.nameJa : cat.nameEn;
-      
+
+      // 全完了後はクリック不可にする（onclick を削除し、見た目も完了状態に）
+      const isDisabled = allCategoriesComplete;
+      const cardStyle = isDisabled
+        ? 'style="opacity: 0.6; cursor: default;"'
+        : '';
+      const clickHandler = isDisabled
+        ? ''
+        : `onclick="app.startCategory('${cat.id}')"`;
+
       categoriesHtml += `
-        <div class="category-card" onclick="app.startCategory('${cat.id}')">
+        <div class="category-card" ${clickHandler} ${cardStyle}>
           <span class="category-icon">${cat.icon}</span>
           <span class="category-name">${this.escapeHtml(catName)}</span>
           <div class="category-progress">
@@ -868,6 +880,13 @@ const App = {
 
   // カテゴリー開始
   startCategory(categoryId) {
+    // 全カテゴリー完了済みの場合はカテゴリー選択を無効化（Bug 3 対策）
+    // → allComplete 画面から先に進めないようにする
+    if (this.userData.completedCategories.length === 6) {
+      this.showScreen('allComplete');
+      return;
+    }
+
     this.currentCategoryQuestionCount = 0;
     QuizManager.currentCategory = categoryId;
     this.nextQuestion(categoryId);
@@ -1276,9 +1295,11 @@ const App = {
     }
 
     // おみやげ獲得があればポップアップを表示
+    // ※ body に直接追加することで mainContent の transform/opacity の影響を受けないようにする
     if (params.newSouvenir) {
-      const content = document.getElementById('mainContent');
-      content.innerHTML += this.renderSouvenirGet(params.newSouvenir);
+      const souvenirEl = document.createElement('div');
+      souvenirEl.innerHTML = this.renderSouvenirGet(params.newSouvenir);
+      document.body.appendChild(souvenirEl.firstElementChild);
       return;
     }
 
@@ -1336,7 +1357,7 @@ const App = {
     const buttonText = lang === 'ja' ? 'やった！' : 'Yay!';
     
     return `
-      <div style="
+      <div id="souvenirPopup" style="
         position: fixed;
         top: 0;
         left: 0;
@@ -1346,7 +1367,7 @@ const App = {
         display: flex;
         align-items: center;
         justify-content: center;
-        z-index: 200;
+        z-index: 1000;
         animation: fadeIn 300ms ease-out;
       " onclick="app.closeSouvenirPopup()">
 
@@ -1402,10 +1423,13 @@ const App = {
 
   // おみやげポップアップを閉じる
   closeSouvenirPopup() {
-    // ポップアップを削除
-    const popup = document.querySelector('[style*="position: fixed"]');
-    if (popup) popup.remove();
-    
+    // IDでポップアップを特定（querySelector の誤検出を防ぐ）
+    const popup = document.getElementById('souvenirPopup');
+    // ポップアップが存在しない場合はアーリーリターン
+    // → ダブルタップ時に snack popup を誤削除 & continueAfterSouvenir 二重実行を防ぐ
+    if (!popup) return;
+    popup.remove();
+
     // 次の処理へ
     this.continueAfterSouvenir();
   },
@@ -1525,14 +1549,17 @@ const App = {
 
   // スナックポップアップを閉じる
   closeSnackPopup() {
-    // ポップアップを削除
+    // IDでポップアップを特定
     const popup = document.getElementById('snackPopup');
-    if (popup) popup.remove();
-    
+    // ポップアップが存在しない場合はアーリーリターン
+    // → ダブルタップ時に continueAfterCategoryComplete が二重実行されるのを防ぐ
+    if (!popup) return;
+    popup.remove();
+
     // スナック変数をクリア
     this.currentSnack = null;
-    
-    // レベルアップまたはホームへ
+
+    // カテゴリー完了後の画面遷移
     this.continueAfterCategoryComplete();
   },
 
@@ -1547,31 +1574,46 @@ const App = {
   },
 
   // カテゴリー完了時
+  // ─ スナック獲得ロジック ─────────────────────────────────
+  // 【条件】カテゴリーが初めて完了したとき（completedCategories に未登録）
+  // 【タイミング】
+  //   1. continueFromFeedback で次の問題がなくなったとき
+  //   2. continueLevelUp で次の問題がなくなったとき
+  //   3. closeCatChat で次の問題がなくなったとき
+  //   4. continueAfterSouvenir で次の問題がなくなったとき
+  // 【保存】スナックは必ず userData.snacks に保存（重複は除外）
+  // 【表示】スナックポップアップを body に直接追加してから return
+  //         closeSnackPopup → continueAfterCategoryComplete で画面遷移
+  // ────────────────────────────────────────────────────────
   onCategoryComplete(categoryId) {
-    // 完了済みカテゴリーに追加
+    // 完了済みカテゴリーに追加（初回のみ）
     if (!this.userData.completedCategories.includes(categoryId)) {
       this.userData.completedCategories.push(categoryId);
-      
+
       // スナック獲得（ランダム1つ）
       const snack = LevelSystem.getRandomSnack();
-      this.currentSnack = snack;  // ← 必ず保存
-      
+      this.currentSnack = snack;
+
+      // userData.snacks に追加（重複は除外）
       if (!this.userData.snacks.includes(snack.emoji)) {
         this.userData.snacks.push(snack.emoji);
       }
-      
+
       Storage.save(this.userData);
-      
-      // スナックポップアップを表示
-      if (this.currentSnack) {
-        const snackEl = document.createElement('div');
-        snackEl.innerHTML = this.renderSnackGet(this.currentSnack);
-        document.body.appendChild(snackEl.firstElementChild);
-        return;
-      }
+
+      // 既存のスナックポップアップが残っていれば先に削除（念のため）
+      const existing = document.getElementById('snackPopup');
+      if (existing) existing.remove();
+
+      // スナックポップアップを body に直接追加
+      // ※ mainContent の transform/opacity に依存しないよう body 直下に配置
+      const snackEl = document.createElement('div');
+      snackEl.innerHTML = this.renderSnackGet(snack);
+      document.body.appendChild(snackEl.firstElementChild);
+      return; // closeSnackPopup → continueAfterCategoryComplete で遷移
     }
-    
-    // すでに完了済みの場合
+
+    // すでに完了済みの場合（再クリック等）はそのまま遷移
     this.continueAfterCategoryComplete();
   },
 
