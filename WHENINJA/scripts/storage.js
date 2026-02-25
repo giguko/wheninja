@@ -52,11 +52,14 @@ const Storage = {
   },
 
   // データの保存
+  // データとハッシュを1つのオブジェクトにまとめて単一の setItem で書き込む
+  // → 2回に分けて書くと2回目が失敗したときハッシュ不一致でデータがリセットされる問題を防ぐ
   save(data) {
     try {
       const hash = this.generateHash(data);
-      localStorage.setItem(this.KEYS.USER_DATA, JSON.stringify(data));
-      localStorage.setItem(this.KEYS.DATA_HASH, hash);
+      localStorage.setItem(this.KEYS.USER_DATA, JSON.stringify({ data, hash }));
+      // 旧フォーマットのハッシュキーが残っていれば削除
+      localStorage.removeItem(this.KEYS.DATA_HASH);
       return true;
     } catch (error) {
       console.error('データ保存エラー:', error);
@@ -72,14 +75,27 @@ const Storage = {
         return this.getDefaultData();
       }
 
-      const data = JSON.parse(stored);
-      const storedHash = localStorage.getItem(this.KEYS.DATA_HASH);
-      const computedHash = this.generateHash(data);
+      const parsed = JSON.parse(stored);
+      let data;
 
-      // 整合性チェック
-      if (storedHash !== computedHash) {
-        console.warn('データ整合性エラー: 初期化します');
-        return this.getDefaultData();
+      // 新フォーマット判定: { data, hash } 形式かどうか
+      if (parsed && typeof parsed === 'object' && parsed.data && parsed.hash !== undefined) {
+        // 新フォーマット（アトミック書き込み版）
+        const computedHash = this.generateHash(parsed.data);
+        if (parsed.hash !== computedHash) {
+          console.warn('データ整合性エラー: 初期化します');
+          return this.getDefaultData();
+        }
+        data = parsed.data;
+      } else {
+        // 旧フォーマット（平オブジェクト）: 旧ハッシュキーで検証
+        const storedHash = localStorage.getItem(this.KEYS.DATA_HASH);
+        const computedHash = this.generateHash(parsed);
+        if (storedHash !== computedHash) {
+          console.warn('データ整合性エラー（旧フォーマット）: 初期化します');
+          return this.getDefaultData();
+        }
+        data = parsed;
       }
 
       // 異常値チェック
