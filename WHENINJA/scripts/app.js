@@ -4,8 +4,8 @@
 const TEXTS = {
   welcome: {
     subText: {
-      ja: '文化とマナーをシェアしてなかよくなろう！',
-      en: "Let's share culture & manners and be friends!"
+      ja: '日本の文化やマナーをシェアしてなかよくなろう！',
+      en: "Let's be friends by sharing Japanese culture and manners!"
     }
   }
 };
@@ -888,22 +888,34 @@ const App = {
 
   // クイズ画面
   renderQuiz(question) {
+    if (!question) return '<div style="padding:2rem;text-align:center;">読み込み中...</div>';
     const lang = this.userData.settings.language;
 
-    // クイズ画像HTML
+    // クイズ画像HTML（固定サイズ＋フェードイン）
     const imageHtml = question.imageUrl ? `
       <div style="
         width: 200px;
+        height: 200px;
         margin: 0 auto 1.5rem;
+        background: var(--muted, #f0f0f0);
+        border-radius: 0.75rem;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       ">
-        <img 
-          src="${question.imageUrl}" 
+        <img
+          src="${question.imageUrl}"
           alt="Quiz Image"
           style="
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: contain;
             border-radius: 0.75rem;
+            opacity: 0;
+            transition: opacity 250ms ease-in;
           "
+          onload="this.style.opacity='1'"
         >
       </div>
     ` : '';
@@ -1435,7 +1447,7 @@ const App = {
     const buttonText = lang === 'ja' ? 'おいしい！' : 'Yummy!';
     
     return `
-      <div style="
+      <div id="snackPopup" style="
         position: fixed;
         top: 0;
         left: 0;
@@ -1445,7 +1457,7 @@ const App = {
         display: flex;
         align-items: center;
         justify-content: center;
-        z-index: 200;
+        z-index: 1000;
         animation: fadeIn 300ms ease-out;
       " onclick="app.closeSnackPopup()">
 
@@ -1514,7 +1526,7 @@ const App = {
   // スナックポップアップを閉じる
   closeSnackPopup() {
     // ポップアップを削除
-    const popup = document.querySelector('[style*="position: fixed"]');
+    const popup = document.getElementById('snackPopup');
     if (popup) popup.remove();
     
     // スナック変数をクリア
@@ -1552,8 +1564,9 @@ const App = {
       
       // スナックポップアップを表示
       if (this.currentSnack) {
-        const content = document.getElementById('mainContent');
-        content.innerHTML += this.renderSnackGet(this.currentSnack);
+        const snackEl = document.createElement('div');
+        snackEl.innerHTML = this.renderSnackGet(this.currentSnack);
+        document.body.appendChild(snackEl.firstElementChild);
         return;
       }
     }
