@@ -783,3 +783,31 @@ body {
     opacity: 1;
   }
 }
+
+/* ===== 画像シマー（クイズ画像ロード中プレースホルダー 2-2） ===== */
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+
+.img-shimmer {
+  position: absolute;
+  inset: 0;
+  /* ライト/ダーク両対応: --muted を基調に半透明白でハイライト */
+  background: var(--muted, #f0f0f0);
+  transition: opacity 200ms ease-out;
+}
+
+.img-shimmer::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 25%,
+    rgba(255, 255, 255, 0.35) 50%,
+    transparent 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
