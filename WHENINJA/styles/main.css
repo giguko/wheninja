@@ -32,6 +32,12 @@
 
   /* Celebrate Screens */
   --bg-celebrate: linear-gradient(135deg, hsl(174, 52%, 95%) 0%, hsl(174, 52%, 90%) 100%);
+
+  /* 修正4: ダークモード未対応画面用の変数 */
+  --screen-bg: #FFFBF0;          /* トップ・オンボーディング・キャラ選択の背景 */
+  --active-row-bg: hsl(174, 52%, 93%);  /* 言語メニューのアクティブ行背景 */
+  --hardcoded-text: #674e41;     /* ブランドブラウン文字 */
+  --hardcoded-subtext: #6d6d6d;  /* 薄いグレー文字 */
 }
 
 .dark {
@@ -45,6 +51,12 @@
 
   /* Celebrate Screens */
   --bg-celebrate: hsl(174, 30%, 18%);
+
+  /* 修正4: ダークモード用オーバーライド */
+  --screen-bg: hsl(24, 20%, 10%);
+  --active-row-bg: hsl(174, 30%, 18%);
+  --hardcoded-text: hsl(36, 20%, 90%);
+  --hardcoded-subtext: hsl(36, 20%, 65%);
 }
 
 /* ===== Base Reset ===== */
@@ -209,6 +221,10 @@ body {
   background: var(--primary);
   padding: 0.75rem 2rem 1rem;
   color: var(--primary-foreground);
+  /* 修正3: ホーム画面ヘッダーをスクロール時も固定 */
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .header h1 {
