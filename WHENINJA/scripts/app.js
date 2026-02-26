@@ -123,6 +123,10 @@ const App = {
         content.innerHTML = '<div class="main-content"><h1>読み込み中...</h1></div>';
     }
     
+    // 修正1: onboarding・ガイドねこ選択画面はスクロール無効化
+    const noScrollScreens = ['onboarding', 'characterSelect'];
+    document.body.style.overflowY = noScrollScreens.includes(screenName) ? 'hidden' : '';
+
     content.style.transition = 'none';
     content.style.opacity = '0';
     content.style.transform = 'translateY(12px)';
@@ -151,9 +155,10 @@ const App = {
     const subText = TEXTS.welcome.subText[lang];
 
     return `
+      <!-- 修正4: ダークモード対応 - background を CSS 変数に変更 -->
       <div style="
         min-height: 100vh;
-        background: #FFFBF0;
+        background: var(--screen-bg);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -165,7 +170,7 @@ const App = {
         <div style="position: absolute; top: 1.5rem; right: 1.5rem;">
           <button onclick="app.toggleLangMenu()" id="langBtn" style="
             background: var(--card);
-            border: 1px solid #ddd;
+            border: 1px solid var(--border);
             border-radius: 9999px;
             padding: 0.4rem 0.9rem;
             font-size: 0.875rem;
@@ -173,7 +178,7 @@ const App = {
             display: flex;
             align-items: center;
             gap: 0.4rem;
-            color: #555;
+            color: var(--muted-foreground);
             box-shadow: 0 1px 4px rgba(0,0,0,0.1);
           ">🌐 ${lang === 'ja' ? 'JP' : 'EN'}</button>
 
@@ -184,7 +189,7 @@ const App = {
             top: 2.5rem;
             right: 0;
             background: var(--card);
-            border: 1px solid #eee;
+            border: 1px solid var(--border);
             border-radius: 1rem;
             box-shadow: 0 4px 20px rgba(0,0,0,0.12);
             min-width: 180px;
@@ -198,10 +203,10 @@ const App = {
               gap: 0.75rem;
               padding: 0.9rem 1.25rem;
               cursor: pointer;
-              background: ${lang === 'en' ? '#f0fffe' : 'white'};
+              background: ${lang === 'en' ? 'var(--active-row-bg)' : 'var(--card)'};
             ">
-              <span style="font-size: 0.75rem; font-weight: 700; color: #888; width: 20px;">US</span>
-              <span style="font-size: 0.95rem; color: #333;">English</span>
+              <span style="font-size: 0.75rem; font-weight: 700; color: var(--muted-foreground); width: 20px;">US</span>
+              <span style="font-size: 0.95rem; color: var(--foreground);">English</span>
               <span id="checkEn" style="margin-left: auto; color: #4DC8C8; display: ${lang === 'en' ? 'inline' : 'none'};">✓</span>
             </div>
 
@@ -212,11 +217,11 @@ const App = {
               gap: 0.75rem;
               padding: 0.9rem 1.25rem;
               cursor: pointer;
-              border-top: 1px solid #f5f5f5;
-              background: ${lang === 'ja' ? '#f0fffe' : 'white'};
+              border-top: 1px solid var(--border);
+              background: ${lang === 'ja' ? 'var(--active-row-bg)' : 'var(--card)'};
             ">
-              <span style="font-size: 0.75rem; font-weight: 700; color: #888; width: 20px;">JP</span>
-              <span style="font-size: 0.95rem; color: #333;">日本語</span>
+              <span style="font-size: 0.75rem; font-weight: 700; color: var(--muted-foreground); width: 20px;">JP</span>
+              <span style="font-size: 0.95rem; color: var(--foreground);">日本語</span>
               <span id="checkJa" style="margin-left: auto; color: #4DC8C8; display: ${lang === 'ja' ? 'inline' : 'none'};">✓</span>
             </div>
 
@@ -226,13 +231,13 @@ const App = {
               align-items: center;
               gap: 0.75rem;
               padding: 0.9rem 1.25rem;
-              border-top: 1px solid #f5f5f5;
+              border-top: 1px solid var(--border);
               opacity: 0.4;
               cursor: not-allowed;
             ">
-              <span style="font-size: 0.75rem; font-weight: 700; color: #888; width: 20px;">KR</span>
-              <span style="font-size: 0.95rem; color: #333;">한국어</span>
-              <span style="margin-left: auto; background: #eee; color: #999; font-size: 0.7rem; padding: 0.2rem 0.5rem; border-radius: 9999px;">Soon</span>
+              <span style="font-size: 0.75rem; font-weight: 700; color: var(--muted-foreground); width: 20px;">KR</span>
+              <span style="font-size: 0.95rem; color: var(--foreground);">한국어</span>
+              <span style="margin-left: auto; background: var(--muted); color: var(--muted-foreground); font-size: 0.7rem; padding: 0.2rem 0.5rem; border-radius: 9999px;">Soon</span>
             </div>
 
             <!-- 中国語（Soon） -->
@@ -241,13 +246,13 @@ const App = {
               align-items: center;
               gap: 0.75rem;
               padding: 0.9rem 1.25rem;
-              border-top: 1px solid #f5f5f5;
+              border-top: 1px solid var(--border);
               opacity: 0.4;
               cursor: not-allowed;
             ">
-              <span style="font-size: 0.75rem; font-weight: 700; color: #888; width: 20px;">CN</span>
-              <span style="font-size: 0.95rem; color: #333;">中文</span>
-              <span style="margin-left: auto; background: #eee; color: #999; font-size: 0.7rem; padding: 0.2rem 0.5rem; border-radius: 9999px;">Soon</span>
+              <span style="font-size: 0.75rem; font-weight: 700; color: var(--muted-foreground); width: 20px;">CN</span>
+              <span style="font-size: 0.95rem; color: var(--foreground);">中文</span>
+              <span style="margin-left: auto; background: var(--muted); color: var(--muted-foreground); font-size: 0.7rem; padding: 0.2rem 0.5rem; border-radius: 9999px;">Soon</span>
             </div>
           </div>
         </div>
@@ -267,7 +272,7 @@ const App = {
 
         <!-- サブテキスト -->
         <p id="welcomeSubText" style="
-          color: #75665e;
+          color: var(--hardcoded-text);
           font-size: 1rem;
           font-weight: 600;
           margin-bottom: 1.5rem;
@@ -281,7 +286,7 @@ const App = {
         <p onclick="app.startFromWelcome()"
           class="tap-to-start"
           style="
-          color: #5d4233;
+          color: var(--hardcoded-text);
           font-size: 1rem;
           font-weight: bold;
           cursor: pointer;
@@ -342,7 +347,7 @@ const App = {
           display: flex;
           align-items: flex-start;
           gap: 1rem;
-          background: white;
+          background: var(--card);
           border-radius: 1rem;
           padding: 1.25rem;
           box-shadow: 0 1px 6px rgba(0,0,0,0.06);
@@ -361,7 +366,7 @@ const App = {
           ">${card.icon}</div>
           <p style="
             font-size: 0.9rem;
-            color: #444;
+            color: var(--foreground);
             line-height: 1.6;
             margin: 0;
             padding-top: 0.25rem;
@@ -377,8 +382,8 @@ const App = {
           width: 48px;
           height: 48px;
           border-radius: 0.75rem;
-          background: white;
-          border: 1px solid #eee;
+          background: var(--card);
+          border: 1px solid var(--border);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -389,9 +394,10 @@ const App = {
     });
 
     return `
+      <!-- 修正4: ダークモード対応 -->
       <div style="
         min-height: 100vh;
-        background: #FFFBF0;
+        background: var(--screen-bg);
         padding: 3rem 1.5rem 2rem;
         display: flex;
         flex-direction: column;
@@ -422,7 +428,7 @@ const App = {
         <!-- 柔軟対応テキスト -->
         <p style="
           font-size: 0.75rem;
-          color: #6d6d6d;
+          color: var(--hardcoded-subtext);
           text-align: center;
           margin: 0 0 0.75rem;
           line-height: 1.6;
@@ -431,7 +437,7 @@ const App = {
         <!-- キャッシュ注意テキスト -->
         <p style="
           font-size: 0.75rem;
-          color: #6d6d6d;
+          color: var(--hardcoded-subtext);
           text-align: center;
           margin: 0 0 1rem;
           line-height: 1.6;
@@ -471,9 +477,10 @@ const App = {
       : 'We will accompany you on your journey!';
 
     return `
+      <!-- 修正4: ダークモード対応 -->
       <div style="
         min-height: 100vh;
-        background: #FFFBF0;
+        background: var(--screen-bg);
         padding: 3rem 1.5rem 2rem;
         display: flex;
         flex-direction: column;
@@ -483,7 +490,7 @@ const App = {
         <h1 style="
           font-size: 1.5rem;
           font-weight: 800;
-          color: #674e41;
+          color: var(--foreground);
           text-align: center;
           margin-bottom: 0.5rem;
         ">${this.escapeHtml(title)}</h1>
@@ -491,7 +498,7 @@ const App = {
         <!-- サブタイトル -->
         <p style="
           font-size: 0.875rem;
-          color: #6f6f6f;
+          color: var(--hardcoded-subtext);
           text-align: center;
           margin-bottom: 2.5rem;
         ">${this.escapeHtml(subtitle)}</p>
@@ -505,8 +512,8 @@ const App = {
         ">
           <!-- Fuji Cat -->
           <div onclick="app.selectCharacter('fuji-cat')" style="
-            background: white;
-            border: 2px solid #eee;
+            background: var(--card);
+            border: 2px solid var(--border);
             border-radius: 1.25rem;
             padding: 1.25rem;
             width: 160px;
@@ -520,13 +527,13 @@ const App = {
           >
             <img src="/assets/images/cat-select-fuji.png" alt="Fuji Cat"
               style="width: 130px; height: 130px; object-fit: contain; margin-bottom: 0.75rem;">
-            <div style="font-size: 0.875rem; font-weight: 700; color: #333;">${lang === 'ja' ? 'ふじねこ' : 'Fuji Cat'}</div>
+            <div style="font-size: 0.875rem; font-weight: 700; color: var(--foreground);">${lang === 'ja' ? 'ふじねこ' : 'Fuji Cat'}</div>
           </div>
 
           <!-- Mike Cat (Coming Soon) -->
           <div style="
-            background: white;
-            border: 2px solid #eee;
+            background: var(--card);
+            border: 2px solid var(--border);
             border-radius: 1.25rem;
             padding: 1.25rem;
             width: 160px;
@@ -538,13 +545,13 @@ const App = {
           ">
             <img src="/assets/images/cat-select-mike-locked.png" alt="Mike Cat"
               style="width: 130px; height: 130px; object-fit: contain; margin-bottom: 0.75rem; filter: grayscale(100%);">
-            <div style="font-size: 0.875rem; font-weight: 700; color: #333;">${lang === 'ja' ? 'みけねこ' : 'Mike Cat'}</div>
+            <div style="font-size: 0.875rem; font-weight: 700; color: var(--foreground);">${lang === 'ja' ? 'みけねこ' : 'Mike Cat'}</div>
             <div style="
               position: absolute;
               top: 0.75rem;
               right: 0.75rem;
-              background: #eee;
-              color: #999;
+              background: var(--muted);
+              color: var(--muted-foreground);
               font-size: 0.6rem;
               font-weight: 700;
               padding: 0.2rem 0.4rem;
@@ -560,8 +567,8 @@ const App = {
         ">
           <!-- Kuro Cat (Coming Soon) -->
           <div style="
-            background: white;
-            border: 2px solid #eee;
+            background: var(--card);
+            border: 2px solid var(--border);
             border-radius: 1.25rem;
             padding: 1.25rem;
             width: 160px;
@@ -573,13 +580,13 @@ const App = {
           ">
             <img src="/assets/images/cat-select-kuro-locked.png" alt="Kuro Cat"
               style="width: 130px; height: 130px; object-fit: contain; margin-bottom: 0.75rem; filter: grayscale(100%);">
-            <div style="font-size: 0.875rem; font-weight: 700; color: #333;">${lang === 'ja' ? 'くろねこ' : 'Kuro Cat'}</div>
+            <div style="font-size: 0.875rem; font-weight: 700; color: var(--foreground);">${lang === 'ja' ? 'くろねこ' : 'Kuro Cat'}</div>
             <div style="
               position: absolute;
               top: 0.75rem;
               right: 0.75rem;
-              background: #eee;
-              color: #999;
+              background: var(--muted);
+              color: var(--muted-foreground);
               font-size: 0.6rem;
               font-weight: 700;
               padding: 0.2rem 0.4rem;
@@ -621,8 +628,9 @@ const App = {
     `;
 
     popup.innerHTML = `
+      <!-- 修正4: ダークモード対応 - background/color を CSS 変数に変更 -->
       <div style="
-        background: white;
+        background: var(--card);
         border-radius: 50%;
         text-align: center;
         width: 300px;
@@ -662,7 +670,7 @@ const App = {
         <p style="
           font-size: 0.8rem;
           font-weight: 700;
-          color: #674e41;
+          color: var(--foreground);
           margin: 0 1.5rem;
           line-height: 1.5;
           animation: fadeSlideUp 200ms ease-out both; /* 4-2: 遅延を削除して背景と同時に表示 */
@@ -720,8 +728,9 @@ const App = {
     `;
 
     popup.innerHTML = `
+      <!-- 修正4: ダークモード対応 - background/color を CSS 変数に変更 -->
       <div style="
-        background: white;
+        background: var(--card);
         border-radius: 50%;
         text-align: center;
         width: 300px;
@@ -755,7 +764,7 @@ const App = {
         <p style="
           font-size: 0.85rem;
           font-weight: 600;
-          color: #674e41;
+          color: var(--foreground);
           margin: 0;
           line-height: 1.6;
           animation: fadeSlideUp 200ms ease-out both; /* 4-2: 遅延を削除して背景と同時に表示 */
@@ -946,22 +955,25 @@ const App = {
     const lang = this.userData.settings.language;
 
     // クイズ画像HTML
+    // 修正2: 横長4:3表示、max-heightで大きくなりすぎを防止、object-fit:containで全体表示
     // 修正1: プリロード済みのため onload はほぼ即時発火し、クイズと同時に表示される
     const imageHtml = question.imageUrl ? `
       <div style="
-        width: 200px;
-        height: 200px;
-        margin: 0 auto 1.5rem;
+        width: 100%;
+        margin: 0 0 0.5rem;
         border-radius: 0.75rem;
         overflow: hidden;
+        line-height: 0;
       ">
         <img
           src="${question.imageUrl}"
           alt="Quiz Image"
           style="
+            display: block;
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            aspect-ratio: 4/3;
+            max-height: 200px;
+            object-fit: contain;
             border-radius: 0.75rem;
             opacity: 0;
             transition: opacity 250ms ease-in;
@@ -1028,8 +1040,8 @@ const App = {
           <div style="height: 100%; background: var(--primary); width: ${(currentNumber / totalNumber) * 100}%; transition: width 300ms;"></div>
         </div>
         
-        <!-- コンテンツ -->
-        <div style="flex: 1; padding: 2rem 1.5rem; overflow-y: auto;">
+        <!-- コンテンツ（修正2: 上padding削減で3択目がスクロールなしで見えるよう調整） -->
+        <div style="flex: 1; padding: 1rem 1.5rem; overflow-y: auto;">
           ${imageHtml}
           
           <!-- カテゴリーアイコン + 難易度 -->
@@ -2010,11 +2022,14 @@ const App = {
     
     return `
       <div style="min-height: calc(100vh - 56px); display: flex; flex-direction: column; background: var(--background);">
-        <!-- ヘッダー -->
+        <!-- ヘッダー（修正3: スクロール時も固定） -->
         <div style="
           background: var(--card);
           padding: 0.75rem 1.5rem;
           border-bottom: 1px solid var(--border);
+          position: sticky;
+          top: 0;
+          z-index: 10;
         ">
           <h1 style="
             font-size: 1.125rem;
@@ -2369,9 +2384,10 @@ const App = {
     
     return `
       <div style="display: flex; flex-direction: column; min-height: calc(100vh - 56px);">
+        <!-- 修正3: ヘッダー＋タブを sticky で固定（スクロール時も常に表示） -->
+        <div style="position: sticky; top: 0; z-index: 10; background: var(--card);">
         <!-- ヘッダー -->
         <div style="
-          background: var(--card);
           padding: 0.75rem 1.5rem;
           border-bottom: 1px solid var(--border);
           display: flex;
@@ -2383,10 +2399,9 @@ const App = {
             ${lang === 'ja' ? `${souvenirCount}/30 獲得` : `${souvenirCount}/30 collected`}
           </span>
         </div>
-        
+
         <!-- タブ -->
         <div style="
-          background: var(--card);
           display: flex;
           gap: 0.5rem;
           padding: 0 1.5rem;
@@ -2425,7 +2440,8 @@ const App = {
             "
           >${snacksText}</button>
         </div>
-        
+        </div><!-- /sticky wrapper -->
+
         <!-- コンテンツ -->
         <div style="flex: 1; padding: 1rem 1.5rem; padding-bottom: calc(56px + 0.75rem); overflow-y: auto;">
           <div id="collectionContent">
