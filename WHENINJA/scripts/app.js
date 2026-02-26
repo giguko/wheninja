@@ -44,8 +44,24 @@ const App = {
   },
     
   // アプリ開始
+  // 修正2: 初回のみトップ画面を表示。2回目以降はホーム（またはオンボーディング）へ直行
   start() {
-    this.showScreen('welcome');
+    if (Storage.hasVisited()) {
+      // 再訪問: キャラクター選択済みならホーム、未選択ならオンボーディングへ
+      if (this.userData.selectedCharacter) {
+        this.showScreen('home');
+      } else {
+        this.showScreen('onboarding');
+      }
+    } else {
+      this.showScreen('welcome');
+    }
+  },
+
+  // 修正2: トップ画面から次へ進む際に訪問フラグをセット
+  startFromWelcome() {
+    Storage.setVisited();
+    this.showScreen('onboarding');
   },
 
   // テーマ適用
@@ -262,7 +278,7 @@ const App = {
 
 
         <!-- Tap to Start -->
-        <p onclick="app.showScreen('onboarding')"
+        <p onclick="app.startFromWelcome()"
           class="tap-to-start"
           style="
           color: #5d4233;
@@ -901,6 +917,13 @@ const App = {
 
     this.currentCategoryQuestionCount = 0;
     QuizManager.currentCategory = categoryId;
+
+    // 修正1: カテゴリー内の全クイズ画像をプリロード
+    // → onload がほぼ即時発火するためクイズ表示と同時に画像が表示される
+    QuizManager.getQuestionsByCategory(categoryId)
+      .filter(q => q.imageUrl)
+      .forEach(q => { const img = new Image(); img.src = q.imageUrl; });
+
     this.nextQuestion(categoryId);
   },
 
@@ -923,25 +946,19 @@ const App = {
     const lang = this.userData.settings.language;
 
     // クイズ画像HTML
-    // 2-1: 背景枠（background/border/padding）を削除してシンプルに表示
-    // 2-2: 画像ロード中はシマープレースホルダーを表示→ロード完了後にスムーズ切り替え
+    // 修正1: プリロード済みのため onload はほぼ即時発火し、クイズと同時に表示される
     const imageHtml = question.imageUrl ? `
       <div style="
         width: 200px;
         height: 200px;
         margin: 0 auto 1.5rem;
-        position: relative;
         border-radius: 0.75rem;
         overflow: hidden;
       ">
-        <!-- ロード中シマー（問題文と同時に表示、ロード完了で非表示） -->
-        <div class="img-shimmer"></div>
         <img
           src="${question.imageUrl}"
           alt="Quiz Image"
           style="
-            position: absolute;
-            inset: 0;
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -949,7 +966,7 @@ const App = {
             opacity: 0;
             transition: opacity 250ms ease-in;
           "
-          onload="this.style.opacity='1'; const s=this.previousElementSibling; if(s) s.style.opacity='0';"
+          onload="this.style.opacity='1';"
         >
       </div>
     ` : '';
@@ -1060,13 +1077,15 @@ const App = {
       }).length;
       
       // 3問正解ごとにおみやげ獲得
+      // 修正3: スナックと同様に未所持から優先してランダム選択
       if (correctCount > 0 && correctCount % 3 === 0) {
         const categorySouvenirs = LevelSystem.SOUVENIRS[categoryId] || [];
-        const unownedSouvenir = categorySouvenirs.find(s => !this.userData.souvenirs.includes(s.emoji));
-        
-        if (unownedSouvenir) {
-          this.userData.souvenirs.push(unownedSouvenir.emoji);
-          newSouvenir = unownedSouvenir;
+        const unownedSouvenirs = categorySouvenirs.filter(s => !this.userData.souvenirs.includes(s.emoji));
+
+        if (unownedSouvenirs.length > 0) {
+          const souvenir = unownedSouvenirs[Math.floor(Math.random() * unownedSouvenirs.length)];
+          this.userData.souvenirs.push(souvenir.emoji);
+          newSouvenir = souvenir;
         }
       }
     }
