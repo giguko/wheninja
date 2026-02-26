@@ -5,7 +5,8 @@ const Storage = {
   KEYS: {
     USER_DATA: 'wheninjapan_userData',
     DATA_HASH: 'wheninjapan_dataHash',
-    HAS_SEEN_WARNING: 'wheninjapan_hasSeenWarning'
+    HAS_SEEN_WARNING: 'wheninjapan_hasSeenWarning',
+    HAS_VISITED: 'wheninjapan_hasVisited'  // 修正2: 初回訪問判定フラグ
   },
 
   // データの初期化
@@ -160,10 +161,20 @@ const Storage = {
     });
   },
 
-  // データの削除
+  // データの削除（修正2: リセット時にトップ画面へ戻るよう HAS_VISITED も削除）
   clear() {
     localStorage.removeItem(this.KEYS.USER_DATA);
     localStorage.removeItem(this.KEYS.DATA_HASH);
+    localStorage.removeItem(this.KEYS.HAS_VISITED);
+  },
+
+  // 修正2: 初回訪問フラグ
+  hasVisited() {
+    return localStorage.getItem(this.KEYS.HAS_VISITED) === 'true';
+  },
+
+  setVisited() {
+    localStorage.setItem(this.KEYS.HAS_VISITED, 'true');
   },
 
   // 警告表示フラグ
