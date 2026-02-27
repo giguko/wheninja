@@ -1,6 +1,6 @@
 // service-worker.js - PWA Service Worker
 
-const CACHE_NAME = 'wheninjapan-v2';
+const CACHE_NAME = 'wheninjapan-v3';
 const urlsToCache = [
   '/',
   '/index.html',
