@@ -398,7 +398,7 @@ const App = {
       <div style="
         min-height: 100vh;
         background: var(--screen-bg);
-        padding: 3rem 1.5rem 2rem;
+        padding: 2rem 1.5rem 1.5rem;
         display: flex;
         flex-direction: column;
       ">
@@ -408,7 +408,7 @@ const App = {
           font-weight: 800;
           color: #4DC8C8 ;
           text-align: center;
-          margin-bottom: 2rem;
+          margin-bottom: 1.25rem;
         ">${this.escapeHtml(title)}</h1>
 
         <!-- 説明カード -->
@@ -419,7 +419,7 @@ const App = {
           display: flex;
           justify-content: center;
           gap: 0.5rem;
-          margin: 1.5rem 0;
+          margin: 0.75rem 0;
           flex-wrap: wrap;
         ">
           ${iconsHtml}
@@ -430,7 +430,7 @@ const App = {
           font-size: 0.75rem;
           color: var(--hardcoded-subtext);
           text-align: center;
-          margin: 0 0 0.75rem;
+          margin: 0 0 0.4rem;
           line-height: 1.6;
         ">${flexNote}</p>
 
@@ -439,7 +439,7 @@ const App = {
           font-size: 0.75rem;
           color: var(--hardcoded-subtext);
           text-align: center;
-          margin: 0 0 1rem;
+          margin: 0 0 0.5rem;
           line-height: 1.6;
         ">${cacheNote}</p>
 
@@ -1263,7 +1263,7 @@ const App = {
           border: 1px solid var(--border);
           border-radius: 1rem;
           padding: 1.25rem;
-          margin-bottom: 2rem;
+          margin-bottom: 1rem;
         ">
           <summary style="
             font-size: 0.875rem;
