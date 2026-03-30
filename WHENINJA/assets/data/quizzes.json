@@ -16,7 +16,7 @@
         {
           "text": {
             "ja": "小さな声で話す",
-            "en": "Speak in a small voice"
+            "en": "Keep your voice down"
           },
           "type": "best"
         },
@@ -45,8 +45,8 @@
           "en": "Trains in Japan are like libraries. Speaking softly is recommended. Let's create a comfortable space for everyone!"
         },
         "comparison": {
-          "ja": "🇺🇸アメリカ: 電車で普通に会話OK 🇯🇵日本: 静かに過ごすのが思いやり",
-          "en": "🇺🇸USA: Normal conversation on trains OK 🇯🇵Japan: Being quiet is considerate"
+          "ja": "🇺🇸アメリカ: 電車での会話スタイルは路線や場所によって様々 🇯🇵日本: 静かに過ごすのが思いやり",
+          "en": "🇺🇸USA: Conversation norms vary by city and transit line 🇯🇵Japan: Being quiet is seen as considerate"
         }
       }
     },
@@ -79,8 +79,8 @@
         },
         {
           "text": {
-            "ja": "寝たふりをする",
-            "en": "Pretend to sleep"
+            "ja": "スマホを見て気づかないふりをする",
+            "en": "Look at your phone and pretend not to notice"
           },
           "type": "wrong"
         }
@@ -145,8 +145,8 @@
           "en": "Line up in 1-2 rows away from platform doors/tracks. Orderly boarding is smooth!"
         },
         "comparison": {
-          "ja": "🇫🇷フランス: 列に並ぶが混雑時は押し合いも 🇯🇵日本: 整然と左右に分かれる",
-          "en": "🇫🇷France: Queue but crowding when busy 🇯🇵Japan: Neatly split left and right"
+          "ja": "🇫🇷フランス: 状況によって並び方が異なることも 🇯🇵日本: 整然と並んで乗り降りするのが特徴",
+          "en": "🇫🇷France: Queuing styles can vary by context 🇯🇵Japan: Neat, orderly boarding and alighting is a notable feature"
         }
       }
     },
@@ -209,8 +209,8 @@
       "difficulty": 3,
       "imageUrl": null,
       "question": {
-        "ja": "朝8時の山手線に乗ろうとしている。何に気をつけるべき?",
-        "en": "You're about to board the Yamanote Line at 8am. What should you be aware of?"
+        "ja": "朝8時頃の東京の通勤ラッシュ。どんな工夫ができる？",
+        "en": "It's around 8am in Tokyo during morning rush hour. What's a smart move?"
       },
       "options": [
         {
@@ -229,8 +229,8 @@
         },
         {
           "text": {
-            "ja": "この時間は電車が運休している",
-            "en": "Trains don't run at this time"
+            "ja": "普段通りに乗れば特に問題ない",
+            "en": "No need to think about it—just board as usual"
           },
           "type": "wrong"
         }
@@ -279,8 +279,8 @@
         },
         {
           "text": {
-            "ja": "スマホで動画を撮る",
-            "en": "Start recording video"
+            "ja": "驚いて固まってしまい食べ物を守るのを忘れる",
+            "en": "Freeze in surprise and forget to protect your food"
           },
           "type": "wrong"
         }
@@ -379,8 +379,8 @@
         },
         {
           "text": {
-            "ja": "大声で「すみません！」と言う",
-            "en": "Shout \"Sumimasen!\""
+            "ja": "扉が開いたらすぐ前に出て無理に降りようとする",
+            "en": "Push toward the doors as soon as they open to force your way out"
           },
           "type": "wrong"
         }
@@ -395,8 +395,8 @@
           "en": "In Japan wait quietly even when crowded. Yielding is more important than pushing."
         },
         "comparison": {
-          "ja": "🇨🇳中国: 混雑時は押し合いが普通 🇯🇵日本: 静かに待つのがマナー",
-          "en": "🇨🇳China: Pushing when crowded is normal 🇯🇵Japan: Waiting quietly is manners"
+          "ja": "🇨🇳中国: 混雑した交通機関での習慣は場所によって異なる 🇯🇵日本: 静かに待つのがマナー",
+          "en": "🇨🇳China: Crowding habits vary by city and situation 🇯🇵Japan: Waiting quietly is considered good manners"
         }
       }
     },
@@ -441,8 +441,8 @@
           "en": "Standing to one side keeps flow smooth!"
         },
         "detail": {
-          "ja": "東京などの関東は左側、大阪などの関西は右側に立つのが暗黙のルール。急ぐ人が反対側を通れるようにね。",
-          "en": "In Kanto (Tokyo) stand left; in Kansai (Osaka) stand right. This lets people in a hurry pass on the other side."
+          "ja": "東京などの関東は左側、大阪などの関西は右側に立つのが暗黙のルール。急ぐ人が反対側を通れるようにね。※現在、一部の鉄道会社では両側に立つことを推奨しているよ。案内に従ってね！",
+          "en": "In Kanto (Tokyo) stand left; in Kansai (Osaka) stand right. This lets people in a hurry pass on the other side. Note: Some railways now encourage standing on both sides—always follow local signage!"
         },
         "comparison": {
           "ja": "🇬🇧イギリス: 右側に立つ 🇯🇵日本: 地域で異なる（関東左・関西右）",
@@ -609,8 +609,8 @@
       "difficulty": 2,
       "imageUrl": null,
       "question": {
-        "ja": "ホテルの部屋で夜遅くに大きな声で話したり音楽をかけたりするのは?",
-        "en": "Talking loudly or playing music late at night in a hotel room?"
+        "ja": "夜10時を過ぎた。ホテルの部屋で友達と話が盛り上がってきた。どうする？",
+        "en": "It's past 10pm. You and your friend are getting louder in the hotel room. What do you do?"
       },
       "options": [
         {
@@ -629,8 +629,8 @@
         },
         {
           "text": {
-            "ja": "深夜までパーティーを開く",
-            "en": "Have a party until late"
+            "ja": "少しくらいなら大丈夫と思ってそのまま続ける",
+            "en": "Assume it's fine for a bit longer and keep going"
           },
           "type": "wrong"
         }
@@ -645,8 +645,8 @@
           "en": "Japanese hotels often have thin walls so be especially quiet after 10pm."
         },
         "comparison": {
-          "ja": "🇺🇸アメリカ: ホテルでも夜遅くまで騒ぐ人も 🇯🇵日本: 夜は静かにするのが常識",
-          "en": "🇺🇸USA: Some make noise late in hotels 🇯🇵Japan: Being quiet at night is common sense"
+          "ja": "🇺🇸アメリカ: 建物の構造によっては音が響きにくい場合も 🇯🇵日本: 壁が薄いことが多いため夜は特に静かにするのがマナー",
+          "en": "🇺🇸USA: Building structures vary, sometimes allowing more sound 🇯🇵Japan: Many buildings have thin walls, so quiet after 10pm is considerate"
         }
       }
     },
@@ -659,8 +659,8 @@
       "difficulty": 2,
       "imageUrl": null,
       "question": {
-        "ja": "チェックアウトの時部屋にゴミを残したまま出るのは?",
-        "en": "Leaving trash in the room when checking out?"
+        "ja": "チェックアウト前、部屋のゴミはどうするのが良い？",
+        "en": "Before checking out of your hotel, what should you do with your room's trash?"
       },
       "options": [
         {
@@ -672,8 +672,8 @@
         },
         {
           "text": {
-            "ja": "ベッドの下に隠しておく",
-            "en": "Hide under the bed"
+            "ja": "そのままにしておく（清掃スタッフが片付けてくれるから）",
+            "en": "Leave it as-is—the cleaning staff will take care of it"
           },
           "type": "wrong"
         },
@@ -865,15 +865,15 @@
       "options": [
         {
           "text": {
-            "ja": "左側を上にして右側を下に重ねる",
-            "en": "Left side over right"
+            "ja": "自分から見て左側が表に来るように着る",
+            "en": "Wrap so your left side faces outward (from your own view)"
           },
           "type": "best"
         },
         {
           "text": {
-            "ja": "右側を上にして左側を下に重ねる",
-            "en": "Right side over left"
+            "ja": "自分から見て右側が表に来るように着る",
+            "en": "Wrap so your right side faces outward (from your own view)"
           },
           "type": "wrong"
         },
@@ -891,8 +891,8 @@
           "en": "Left over right is correct!"
         },
         "detail": {
-          "ja": "浴衣は「左前」（左側が上）に着るのが正解。右前は亡くなった人の着方だから注意してね。旅館の人に聞いてもOK！",
-          "en": "Yukata should be worn \"left over right.\" Right over left is for the deceased so be careful. Feel free to ask ryokan staff!"
+          "ja": "浴衣は「左前」（自分から見て左側が上）に着るのが正解だよ。覚え方：自分の左手側が表に来るようにするとGOOD！迷ったら旅館のスタッフに聞いてみよう。",
+          "en": "Yukata should be worn \"left over right\" (your left side on top from your own view). Tip: your left hand should be able to reach into the front. When in doubt, ask ryokan staff!"
         },
         "comparison": {
           "ja": "🇰🇷韓国: 韓服も左前 🇯🇵日本: 浴衣・着物すべて左前",
@@ -1032,7 +1032,7 @@
             "ja": "持ち帰り用の容器をもらう",
             "en": "Ask for a to-go container"
           },
-          "type": "wrong"
+          "type": "conditional"
         }
       ],
       "feedback": {
@@ -1045,8 +1045,8 @@
           "en": "Japan has a strong \"mottainai\" (wasteful) spirit. Finishing food shows gratitude."
         },
         "comparison": {
-          "ja": "🇨🇳中国: 少し残すのがおもてなしの証 🇮🇳インド: 完食すると「もっと欲しい」という意味 🇯🇵日本: きれいに食べ切るのが感謝",
-          "en": "🇨🇳China: Leaving some shows hospitality 🇮🇳India: Finishing means \"want more\" 🇯🇵Japan: Eating cleanly shows gratitude"
+          "ja": "🇨🇳中国: 家庭によっては少し残すことも 🇮🇳インド: 食文化は地域で様々 🇯🇵日本: きれいに食べ切るのが感謝の表れとされることが多い",
+          "en": "🇨🇳China: In some contexts, leaving a little can be customary 🇮🇳India: Food customs vary widely by region 🇯🇵Japan: Finishing your food is often seen as appreciation"
         }
       }
     },
@@ -1109,8 +1109,8 @@
       "difficulty": 3,
       "imageUrl": null,
       "question": {
-        "ja": "高級レストランで懐石料理を食べている。お刺身とご飯が同時に出てきた。どちらから食べる?",
-        "en": "You're eating kaiseki at a high-end restaurant. Sashimi and rice arrive simultaneously. Which do you eat first?"
+        "ja": "高級レストランで懐石料理を食べている。お刺身とご飯が同時に出てきた。どちらから食べるのが一般的？",
+        "en": "You're eating kaiseki at a high-end restaurant. Sashimi and rice arrive together. Which is it more common to eat first?"
       },
       "options": [
         {
@@ -1132,7 +1132,7 @@
             "ja": "どちらでも好きな方から",
             "en": "Either one is fine"
           },
-          "type": "wrong"
+          "type": "conditional"
         }
       ],
       "feedback": {
@@ -1141,8 +1141,8 @@
           "en": "Starting with sashimi makes the flavor flow beautiful"
         },
         "detail": {
-          "ja": "懐石料理は「順番」が大事。お刺身→ご飯の流れで味覚を整えるんだ。",
-          "en": "Kaiseki values \"order.\" The sashimi→rice flow arranges your palate."
+          "ja": "懐石料理では淡白なものから濃いものへと味覚を整える流れが多いよ。ただし、お店によって順序が異なる場合もあるから、迷ったら周りに合わせてみよう。",
+          "en": "Kaiseki often flows from lighter to richer flavors. That said, the order can vary by restaurant and chef—when in doubt, follow the flow of the meal."
         },
         "comparison": {
           "ja": "🇫🇷フランス: 前菜→メインの順 🇯🇵日本: お刺身→ご飯の流れが伝統",
@@ -1172,8 +1172,8 @@
         },
         {
           "text": {
-            "ja": "大声で「すみませーん！」と呼ぶ",
-            "en": "Shout \"Sumimasen!\""
+            "ja": "立ち上がって店員さんを追いかける",
+            "en": "Stand up and walk after the server to get their attention"
           },
           "type": "wrong"
         },
@@ -1195,8 +1195,8 @@
           "en": "In Japan don't call servers loudly. Raising your hand gently is good manners."
         },
         "comparison": {
-          "ja": "🇺🇸アメリカ: 大声で呼ぶのが普通 🇯🇵日本: 静かに手を挙げるのが礼儀",
-          "en": "🇺🇸USA: Calling loudly is normal 🇯🇵Japan: Quietly raising hand is courtesy"
+          "ja": "🇺🇸アメリカ: 目が合ったタイミングや手を挙げて呼ぶことが多い 🇯🇵日本: 静かに手を挙げて目で合図するのが礼儀",
+          "en": "🇺🇸USA: Often catch the server's eye or raise a hand 🇯🇵Japan: Quietly raising your hand and making eye contact is polite"
         }
       }
     },
@@ -1215,8 +1215,8 @@
       "options": [
         {
           "text": {
-            "ja": "「ありがとうございます」と受け取って楽しむ",
-            "en": "Say \"Arigatou gozaimasu\" and enjoy"
+            "ja": "お礼を言って受け取り、楽しむ",
+            "en": "Say thank you, accept it, and enjoy"
           },
           "type": "best"
         },
@@ -1329,8 +1329,8 @@
         },
         {
           "text": {
-            "ja": "スープを派手に飛び散らせる",
-            "en": "Splash soup everywhere"
+            "ja": "音を立てないよう気をつけて静かに食べる（すすらない）",
+            "en": "Eat quietly without slurping—just like back home"
           },
           "type": "wrong"
         }
@@ -1391,8 +1391,8 @@
           "en": "Pointing to the nose is the Japanese way of \"me\"!"
         },
         "detail": {
-          "ja": "日本人は「私」と言いたいとき鼻を指すことが多いんだ。不思議だけど可愛いよね。",
-          "en": "Japanese often point to their nose when saying \"me.\" Strange but cute right."
+          "ja": "日本人の中には「私」と言いたいとき鼻を指す人もいるんだ。ちょっとユニークで可愛い仕草だよね。",
+          "en": "Some Japanese people point to their nose when saying \"me\"—a charming little cultural quirk!"
         },
         "comparison": {
           "ja": "🇺🇸アメリカ: 胸を指す 🇯🇵日本: 鼻を指すのが一般的",
@@ -1479,8 +1479,8 @@
         },
         {
           "text": {
-            "ja": "大声で「写真！」と叫ぶ",
-            "en": "Shout \"Photo!\""
+            "ja": "遠くにいる人に大声で呼びかけて来てもらおうとする",
+            "en": "Call out loudly to a stranger across the area to come over"
           },
           "type": "wrong"
         }
@@ -1491,8 +1491,8 @@
           "en": "Bowing + gestures work perfectly!"
         },
         "detail": {
-          "ja": "日本人は英語が苦手な人も多いけど、ジェスチャーとスマイルで十分伝わる。カメラを構えて「お願いします」のジェスチャーをすればOK！",
-          "en": "Many Japanese aren't fluent in English but gestures + smile work great. Show camera + gesture \"please\" and you're good!"
+          "ja": "言葉が通じなくても大丈夫！ジェスチャーとスマイルで気持ちは十分伝わるよ。カメラを構えて「お願いします」のジェスチャーをすればOK！",
+          "en": "No worries if words don't fully connect! Gestures and a smile go a long way. Hold up your camera, gesture \"please,\" and you're good!"
         },
         "comparison": {
           "ja": "🇺🇸アメリカ: 直接「Can you take a photo?」 🇯🇵日本: ジェスチャー + お辞儀が自然",
@@ -1522,8 +1522,8 @@
         },
         {
           "text": {
-            "ja": "道端の若者",
-            "en": "Random young people on street"
+            "ja": "近くにいる若い人",
+            "en": "Young people nearby"
           },
           "type": "conditional"
         },
@@ -1572,8 +1572,8 @@
         },
         {
           "text": {
-            "ja": "英語で大声で話す",
-            "en": "Speak English loudly"
+            "ja": "通じないのにひたすら英語で話し続ける",
+            "en": "Keep repeating yourself in English even when it's not working"
           },
           "type": "wrong"
         },
@@ -1591,8 +1591,8 @@
           "en": "Translation apps + gestures are your best friends!"
         },
         "detail": {
-          "ja": "翻訳アプリで画面を見せ、ジェスチャーを加えれば解決できる。日本人は助けたい気持ちが強いから安心してね！",
-          "en": "Show translation app screen + gestures and you'll solve it. Japanese people genuinely want to help!"
+          "ja": "翻訳アプリで画面を見せ、ジェスチャーを加えれば解決できることが多い。困っていると助けてくれる人もいるから、勇気を出して声をかけてみよう！",
+          "en": "Show translation app screen + gestures and you'll often find a way through. If someone sees you're struggling, they may offer to help—so don't be shy!"
         },
         "comparison": {
           "ja": "🇮🇳インド: 英語が通じやすい 🇯🇵日本: 翻訳アプリ + ジェスチャーが最強",
@@ -1665,15 +1665,15 @@
       "options": [
         {
           "text": {
-            "ja": "「すみません、新幹線はどこですか？」+ ジェスチャー",
-            "en": "Say \"Sumimasen Shinkansen doko?\" + gesture"
+            "ja": "「すみません」＋「新幹線」＋指差しジェスチャー",
+            "en": "Say \"Sumimasen\" + \"Shinkansen\" + pointing gesture"
           },
           "type": "best"
         },
         {
           "text": {
-            "ja": "英語で「Where is Shinkansen?」と大声で聞く",
-            "en": "Shout in English \"Where is Shinkansen?\""
+            "ja": "いきなり英語で「Where is the Shinkansen?」と話しかける",
+            "en": "Walk up and immediately ask in English without any greeting"
           },
           "type": "wrong"
         },
@@ -1779,8 +1779,8 @@
         },
         {
           "text": {
-            "ja": "夜中にこっそり",
-            "en": "Secretly at night"
+            "ja": "分別せずにまとめて一袋に入れて出す",
+            "en": "Put everything in one bag without sorting"
           },
           "type": "wrong"
         }
@@ -1829,8 +1829,8 @@
         },
         {
           "text": {
-            "ja": "じっくり自己紹介を始める",
-            "en": "Start a long self-introduction"
+            "ja": "初対面なのに部屋に上がって話しましょうと誘う",
+            "en": "Invite yourself in for a long chat right away"
           },
           "type": "wrong"
         }
@@ -1879,8 +1879,8 @@
         },
         {
           "text": {
-            "ja": "パーティーを開く",
-            "en": "Throw a party"
+            "ja": "友人と電話で夢中になって話し続ける",
+            "en": "Get caught up in a phone call with friends without thinking about volume"
           },
           "type": "wrong"
         }
@@ -1895,8 +1895,8 @@
           "en": "Japanese apartments often have thin walls. Be especially quiet after 10pm. Your neighbors will appreciate it."
         },
         "comparison": {
-          "ja": "🇺🇸アメリカ: 夜遅くまで音OKな場合も 🇯🇵日本: 夜は静かにするのが常識",
-          "en": "🇺🇸USA: Sometimes OK to make noise late 🇯🇵Japan: Being quiet at night is common sense"
+          "ja": "🇺🇸アメリカ: 建物の構造によっては音が響きにくい場合も 🇯🇵日本: 壁が薄いことが多いため夜は特に静かにするのがマナー",
+          "en": "🇺🇸USA: Building structures vary, sometimes allowing more sound 🇯🇵Japan: Many buildings have thin walls, so quiet after 10pm is considerate"
         }
       }
     },
@@ -2229,8 +2229,8 @@
         },
         {
           "text": {
-            "ja": "写真を撮るだけ",
-            "en": "Just take photos"
+            "ja": "手を洗わずそのまま参拝に進む",
+            "en": "Skip the purification and head straight to pray"
           },
           "type": "wrong"
         }
@@ -2259,8 +2259,8 @@
       "difficulty": 2,
       "imageUrl": null,
       "question": {
-        "ja": "神社でお参りする時はどのように合掌する？",
-        "en": "How do you put your hands together when praying at a shrine?"
+        "ja": "神社でお参りするとき、正式な手順はどれ？",
+        "en": "What is the standard way to pray at a Shinto shrine?"
       },
       "options": [
         {
@@ -2268,14 +2268,14 @@
             "ja": "思いをこめて合掌する",
             "en": "Put your hands together and pray sincerely"
           },
-          "type": "best"
+          "type": "conditional"
         },
         {
           "text": {
             "ja": "二礼二拍手一礼など、神社ごとの作法に従う",
             "en": "Follow the shrine's ritual (two bows, two claps, one bow)"
           },
-          "type": "conditional"
+          "type": "best"
         },
         {
           "text": {
@@ -2287,12 +2287,12 @@
       ],
       "feedback": {
         "point": {
-          "ja": "神様に向けて気持ち込めて合掌しよう",
-          "en": "Put your hands together and pray to the deity with sincerity"
+          "ja": "二礼二拍手一礼が一般的な作法だよ！",
+          "en": "Two bows, two claps, one bow is the common way!"
         },
         "detail": {
-          "ja": "神社の合掌では心を込めることが一番大切だよ。",
-          "en": "At shrines, praying with sincerity is most important."
+          "ja": "多くの神社では「二礼二拍手一礼」が基本の作法。気持ちを込めることも同じくらい大切だよ。",
+          "en": "At most shrines, two bows, two claps, and one bow is the standard etiquette. Praying with sincerity is equally important."
         },
         "comparison": {
           "ja": "🇰🇷韓国: 両手を合わせて祈る 🇯🇵日本: 2礼2拍手1礼",
@@ -2359,7 +2359,7 @@
       "difficulty": 3,
       "imageUrl": null,
       "question": {
-        "ja": "お寺で写真撮影何に気をつける?",
+        "ja": "お寺で写真を撮るとき、何に気をつけるといい？",
         "en": "What should you be careful about when taking photos at a temple?"
       },
       "options": [
